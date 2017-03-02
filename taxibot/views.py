@@ -11,6 +11,10 @@ import multiprocessing
 import requests
 
 
+def test(request):
+    # return HttpResponse('Hello from Python!')
+    return render(request, 'Test.html')
+
 
 class CallListView(generic.ListView):  #FIRST SECTION, CALLS JUST COME AND HASN'T  ACCEPTED BY MANAGER YED
     template_name = "index.html"

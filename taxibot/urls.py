@@ -9,5 +9,6 @@ urlpatterns = [url(r'^$', views.CallListView.as_view(), name='callList'),
                url(r'^accepted/$', views.acceptedCalls.as_view(), name='accepted'),
                url(r'^createBot/$', views.CreateBot, name='create_bot'),
                url(r'^setArrived/$', views.EndCall, name='send_arrived'),
+                url(r'^test/$',views.test, name='test'),
 
                ]
