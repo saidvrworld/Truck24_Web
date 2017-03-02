@@ -8,6 +8,7 @@ from django.utils import timezone
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 import multiprocessing
+import requests
 
 
 
