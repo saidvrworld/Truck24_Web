@@ -65,9 +65,9 @@
     <div class="page-content">
   
 
-  <form action="{% url 'taxibot:setDriver' %}" method="post">
+  <form action="{% url 'taxibot:setDriver' %}" method="POST">
+            {% csrf_token %}
       <div class="right_bar">
-      {% csrf_token %}
 
         <select size ="1"  name="car[]">
             <option selected value = "kaptiva">Captiva</option>
