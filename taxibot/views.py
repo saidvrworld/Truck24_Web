@@ -5,15 +5,17 @@ from django.shortcuts import render
 from django.views import generic
 from .models import TaxiCall
 from django.utils import timezone
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect,HttpResponse
 from django.core.urlresolvers import reverse
 import multiprocessing
 import requests
+import os
+
 
 
 def test(request):
-    # return HttpResponse('Hello from Python!')
-    return render(request, 'Test.html')
+    times = int(os.environ.get('TIMES', 3))
+    return HttpResponse('Hello! ' * times)
 
 
 class CallListView(generic.ListView):  #FIRST SECTION, CALLS JUST COME AND HASN'T  ACCEPTED BY MANAGER YED
