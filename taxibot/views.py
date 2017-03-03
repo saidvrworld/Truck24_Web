@@ -161,7 +161,6 @@ def test(request):
 
 
 
-    UpdateObj = json.loads(request.body.decode("utf-8"))
 
 def getUpdate(request):
     UpdateObj = json.loads(request.body.decode("utf-8"))
