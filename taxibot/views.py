@@ -133,6 +133,7 @@ def DriverInfo(chat_id):
 
 
 import telebot
+import json
 #from flask import Flask, request
 
 
@@ -168,6 +169,7 @@ def test(request):
 
 def getUpdate(request):
 
-    #Update =  request.POST["Update"]
+    
+    #UpdateObj = json.loads(request.body.decode("utf-8"))
 
     return HttpResponse("failed")
