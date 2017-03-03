@@ -22,7 +22,7 @@ def getMessage():
     return "!", 200
 
 @server.route("/")
-def webhook():
+def webhook(request):
     bot.remove_webhook()
     bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/bot")
     return "!", 200
