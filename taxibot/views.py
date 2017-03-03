@@ -144,7 +144,7 @@ bot = telebot.TeleBot(token)
 
 def webhook(request):
     bot.remove_webhook()
-    bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/getUpdate")
+    bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/getUpdate/")
     return HttpResponseRedirect(reverse("taxibot:callList"))
 
 
@@ -161,9 +161,11 @@ def test(request):
 
 
 
-    #UpdateObj = json.loads(request.body.decode("utf-8"))
+    UpdateObj = json.loads(request.body.decode("utf-8"))
 
 def getUpdate(request):
+    UpdateObj = json.loads(request.body.decode("utf-8"))
+
     TaxiCall.objects.create(chat_id=12, type="HAH2", number="2324", details="sfcsaf",
                             address="sadasf")
 
