@@ -166,8 +166,10 @@ def webhook():
     bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/bot")
     return "!", 200
 
-server.run(debug=True,use_reloader=True)
+server.run(host="0.0.0.0", port=os.environ.get('PORT', 49483))
 server = Flask(__name__)
+
+#server.run(debug=True,use_reloader=True)
 
 
 
