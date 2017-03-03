@@ -17,11 +17,11 @@ def echo_message(message):
     bot.reply_to(message, message.text)
 
 @server.route("/bot", methods=['POST'])
-def getMessage():
+def getMessage(request=None):
     bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
     return "!", 200
 
-@server.route("/hook")
+@server.route("/bot/hook")
 def webhook(request):
     bot.remove_webhook()
     bot.set_webhook(url="https://favorittaxi.herokuapp.com/bot")
