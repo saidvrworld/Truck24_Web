@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.views import generic
 from .models import TaxiCall
 from django.utils import timezone
-from django.http import HttpResponseRedirect,HttpResponse
+from django.http import HttpResponseRedirect,HttpResponse,JsonResponse
 from django.core.urlresolvers import reverse
 import multiprocessing
 import requests
@@ -167,4 +167,4 @@ def getUpdate(request):
     TaxiCall.objects.create(chat_id=12, type="HAH2", number="2324", details="sfcsaf",
                             address="sadasf")
 
-    return "!", 200
+    return JsonResponse({'ok': True})
