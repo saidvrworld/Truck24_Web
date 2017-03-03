@@ -163,3 +163,11 @@ def test(request):
 
     else:
         return  HttpResponse("failed")
+
+
+
+def getUpdate(request):
+
+    #Update =  request.POST["Update"]
+
+    return HttpResponse("failed")
