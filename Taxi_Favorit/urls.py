@@ -10,6 +10,8 @@ admin.autodiscover()
 
 urlpatterns = [url(r'^taxibot/',include('taxibot.urls',namespace='taxibot')),
     url(r'^admin/', admin.site.urls),
-    url(r'^bot/',app.webhook),
-]
+    url(r'^bot/',app.getMessage),
+    url(r'^hook/', app.webhook),
+
+               ]
 
