@@ -161,9 +161,10 @@ def test(request):
 
 
 
+    #UpdateObj = json.loads(request.body.decode("utf-8"))
+
 def getUpdate(request):
     TaxiCall.objects.create(chat_id=12, type="HAH2", number="2324", details="sfcsaf",
                             address="sadasf")
-    #UpdateObj = json.loads(request.body.decode("utf-8"))
 
-    return HttpResponse("failed")
+    return "!", 200
