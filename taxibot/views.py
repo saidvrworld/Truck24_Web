@@ -13,11 +13,6 @@ import os
 
 
 
-def test(request):
-    times = int(os.environ.get('TIMES', 3))
-    return HttpResponse('Hello! ' * times)
-
-
 class CallListView(generic.ListView):  #FIRST SECTION, CALLS JUST COME AND HASN'T  ACCEPTED BY MANAGER YED
     template_name = "index.html"
     context_object_name = "call_list"
@@ -152,7 +147,19 @@ def webhook(request):
     return HttpResponseRedirect(reverse("taxibot:callList"))
 
 def getUpdate(request):
-    TaxiCall.objects.create(chat_id=12, type="HAH", number="2324", details="sfcsaf",
+
+    TaxiCall.objects.create(chat_id=12, type="HAH2", number="2324", details="sfcsaf",
                             address="sadasf")
     #bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
-    return HttpResponseRedirect(reverse("taxibot:callList"))
+    return "!", 200
+
+
+def test(request):
+
+
+    if(True):
+
+       return HttpResponse(True)
+
+    else:
+        return  HttpResponse("failed")
