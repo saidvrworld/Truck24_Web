@@ -8,7 +8,7 @@ token = "309803225:AAEfkOtjUfLCTSHicJD05uy7AvilTCkzOYs"
 bot = telebot.TeleBot(token)
 
 #server = Flask(__name__)
-
+"""
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.reply_to(message, 'Hello, ' + message.from_user.first_name)
@@ -21,7 +21,7 @@ def echo_message(message):
 def getMessage(request1=None):
     #bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
     return "!", 200
-
+"""
 #@server.route("/bot/hook")
 def webhook(request):
     bot.remove_webhook()
