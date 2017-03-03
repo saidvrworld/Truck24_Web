@@ -137,6 +137,18 @@ def DriverInfo(chat_id):
         return None
 
 
+import telebot
+#from flask import Flask, request
 
+
+token = "309803225:AAEfkOtjUfLCTSHicJD05uy7AvilTCkzOYs"
+
+bot = telebot.TeleBot(token)
+
+
+def webhook(request):
+    bot.remove_webhook()
+    bot.set_webhook(url="https://favorittaxi.herokuapp.com/bot")
+    return HttpResponseRedirect(reverse("taxibot:callList"))
 
 

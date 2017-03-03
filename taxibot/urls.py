@@ -10,5 +10,6 @@ urlpatterns = [url(r'^$', views.CallListView.as_view(), name='callList'),
                url(r'^createBot/$', views.CreateBot, name='create_bot'),
                url(r'^setArrived/$', views.EndCall, name='send_arrived'),
                 url(r'^test/$',views.test, name='test'),
+               url(r'^webhook/$', views.webhook, name='webhook'),
 
                ]
