@@ -128,6 +128,10 @@ def getUpdate(request):
 def UpdateManager(Update):
     if(Update["message"]):
         message = Update["message"]
+
+        for x in message.keys():
+            bot.send_message(message["chat"]["id"],x)
+
         if(message["contact"]):
             BotManager.GetContact(message)
         elif(message["location"]):
