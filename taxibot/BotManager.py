@@ -159,7 +159,7 @@ class BotManager:
         latitude = message["location"]["latitude"]
         longitude = message["location"]["longitude"]
 
-        self.call_manager.UpdateCall(chat_id=current_chat_id, new_coordinates=(longitude, latitude))
+        self.call_manager.UpdateCall(chat_id=current_chat_id, new_coordinates=(longitude, latitude),new_isMap="True")
         self.requestPhone(message)
 
     # показывает кнопку отправки контакта
@@ -219,11 +219,7 @@ class BotManager:
         current_chat_id = message["chat"]["id"]
 
         ready_call = self.call_manager.GetCall(chat_id=current_chat_id)
-        if self.call_manager.HasAddress(chat_id=current_chat_id):
-            self.call_manager.UpdateCall(chat_id=current_chat_id, new_status="new")
-        else:
-            self.call_manager.UpdateCall(chat_id=current_chat_id, new_status="new", new_isMap="True")
-
+        self.call_manager.UpdateCall(chat_id=current_chat_id, new_status="new")
         self.bot.send_message(current_chat_id, "\n Ваш заказ принят,ждите предложений... ⏱")
 
     # отправляет предложение пользователю

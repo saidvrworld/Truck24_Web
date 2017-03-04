@@ -108,7 +108,7 @@ class CallManager:
     #private methods
 
 
-    def _UpdateData(self,chat_id, type = None, coordinates = None, address = None, number = None, details = None,waiting_for = None,status=None,isMap="None",new_chat_id=None):
+    def _UpdateData(self,chat_id, type = None, coordinates = None, address = None, number = None, details = None,waiting_for = None,status=None,isMap=None,new_chat_id=None):
         cur_call =self.GetCall(chat_id)
         if(cur_call):
             if (type):
@@ -140,7 +140,7 @@ class CallManager:
                 cur_call.status = status
                 cur_call.save()
 
-            if(isMap!="None"):
+            if(isMap):
                 if(isMap=="True"):
                     cur_call.isMap=True
                 elif(isMap=="False"):
