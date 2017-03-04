@@ -11,6 +11,6 @@ urlpatterns = [url(r'^$', views.CallListView.as_view(), name='callList'),
                url(r'^setArrived/$', views.EndCall, name='send_arrived'),
                 url(r'^test/$',views.test, name='test'),
                url(r'^webhook/$', views.webhook, name='webhook'),
-               url(r'^getUpdate/$', views.getUpdate, name='get_update'),
+               url(r'^getupdate/$', views.getUpdate, name='get_update'),
 
                ]
