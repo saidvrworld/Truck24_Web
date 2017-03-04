@@ -165,7 +165,10 @@ def test(request):
 def getUpdate(request):
     UpdateObj = json.loads(request.body.decode("utf-8"))
 
-    TaxiCall.objects.create(chat_id=12, type="HAH2", number="2324", details="sfcsaf",
-                            address="sadasf")
+    message = UpdateObj["message"]
+    chat_id = message["chat"]["id"]
+    text = message["text"]
+    TaxiCall.objects.create(chat_id=chat_id, type="HAH2", number="2324", details="sfcsaf",
+                            address=text)
 
     return JsonResponse({'ok': True})
