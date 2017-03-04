@@ -168,4 +168,4 @@ def getUpdate(request):
     TaxiCall.objects.create(chat_id=12, type="HAH2", number="2324", details="sfcsaf",
                             address="sadasf")
 
-    return JsonResponse({'ok': True})
+    return 200   #JsonResponse({'ok': True})
