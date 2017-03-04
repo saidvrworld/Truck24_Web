@@ -144,7 +144,7 @@ bot = telebot.TeleBot(token)
 
 def webhook(request):
     bot.remove_webhook()
-    bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/getUpdate")
+    bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/getUpdate/")
     return HttpResponseRedirect(reverse("taxibot:callList"))
 
 
