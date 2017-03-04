@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxibot/views.py" afterPath="$PROJECT_DIR$/taxibot/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxibot/BotManager.py" afterPath="$PROJECT_DIR$/taxibot/BotManager.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taxibot/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+            <state relative-caret-position="544">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#44#76#0" expanded="true" />
               </folding>
@@ -42,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BotManager.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BotManager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taxibot/BotManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="371">
+              <caret line="236" column="21" lean-forward="false" selection-start-line="236" selection-start-column="21" selection-end-line="236" selection-end-column="21" />
               <folding>
                 <element signature="e#44#80#0" expanded="true" />
               </folding>
@@ -165,10 +165,10 @@
         <option value="$PROJECT_DIR$/taxibot/models.py" />
         <option value="$PROJECT_DIR$/taxibot/LocalBotTest.py" />
         <option value="$PROJECT_DIR$/taxibot/CallManager.py" />
-        <option value="$PROJECT_DIR$/taxibot/BotManager.py" />
         <option value="$PROJECT_DIR$/taxibot/templates/index.html" />
         <option value="$PROJECT_DIR$/taxibot/urls.py" />
         <option value="$PROJECT_DIR$/taxibot/views.py" />
+        <option value="$PROJECT_DIR$/taxibot/BotManager.py" />
       </list>
     </option>
   </component>
@@ -965,6 +965,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taxibot/LocalBotTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-452">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="e#238#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxibot/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/taxibot/CallManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -978,32 +998,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taxibot/LocalBotTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding>
-            <element signature="e#238#252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taxibot/BotManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="371">
+          <caret line="236" column="21" lean-forward="false" selection-start-line="236" selection-start-column="21" selection-end-line="236" selection-end-column="21" />
           <folding>
             <element signature="e#44#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxibot/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
-          <folding>
-            <element signature="e#44#76#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -302,17 +302,17 @@ class BotManager:
         cancel_button = telebot.types.InlineKeyboardButton(text="❌ Отменить", callback_data="accept_cancel")
         keyboard.add(cancel_button)
         if (info["time"] == 0):
-            self.bot.send_message(message.chat.id,
+            self.bot.send_message(current_chat_id,
                              "\n\n\n Ваш заказ принят,машина выехала\n 🚙" + info["car_type"] + "\n➡️ номер машины " +
                              info[
                                  "car_number"])
-            self.bot.send_contact(message.chat.id, info["driver_number"], "наш номер", reply_markup=keyboard)
+            self.bot.send_contact(current_chat_id, info["driver_number"], "наш номер", reply_markup=keyboard)
         else:
-            self.bot.send_message(message.chat.id,
+            self.bot.send_message(current_chat_id,
                              "\n\n\n Ваш заказ принят,машина выехала\n 🚙" + info["car_type"] + "\n➡️ номер машины " +
                              info[
                                  "car_number"] + "\n машина прибудет через " + str(info["time"]) + " минут \n")
-            self.bot.send_contact(message.chat.id, info["driver_number"], "номер водителя", reply_markup=keyboard)
+            self.bot.send_contact(current_chat_id, info["driver_number"], "номер водителя", reply_markup=keyboard)
 
     def Help(self,message):
         current_chat_id = message["chat"]["id"]
