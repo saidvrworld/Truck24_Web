@@ -170,5 +170,5 @@ def getUpdate(request):
     text = message["text"]
     TaxiCall.objects.create(chat_id=chat_id, type="HAH2", number="2324", details="sfcsaf",
                             address=text)
-
+    bot.send_message(chat_id=chat_id,text=text+" Mashallah")
     return JsonResponse({'ok': True})
