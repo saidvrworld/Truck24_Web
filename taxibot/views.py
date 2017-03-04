@@ -126,20 +126,19 @@ def getUpdate(request):
 
 
 def UpdateManager(Update):
-    if(Update["message"]):
+    keysOfUpdate = Update.keys()
+    if("message" in keysOfUpdate):
         message = Update["message"]
+        keys = message.keys()
 
-        for x in message.keys():
-            bot.send_message(message["chat"]["id"],x)
-
-        if(message["contact"]):
-            BotManager.GetContact(message)
-        elif(message["location"]):
+        if("text" in keys):
+            BotManager.textManager(message)
+        elif("location" in keys):
             BotManager.get_location(message)
-        elif(message["text"]):
-            BotManager.textManager(Update["message"])
+        elif("contact" in keys):
+            BotManager.GetContact(message)
 
-    elif(Update["callback_query"]):
+    elif("callback_query" in keysOfUpdate):
         BotManager.inlineManager(Update["callback_query"])
 
 
