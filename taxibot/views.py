@@ -1,16 +1,21 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from django.shortcuts import render
 from django.views import generic
 from .models import TaxiCall
 from django.utils import timezone
 from django.http import HttpResponseRedirect,HttpResponse,JsonResponse
 from django.core.urlresolvers import reverse
-import multiprocessing
-import requests
-import os
+from .BotManager import BotManager
+import telebot
+import json
 
+
+
+token = "309803225:AAEfkOtjUfLCTSHicJD05uy7AvilTCkzOYs"
+
+bot = telebot.TeleBot(token)
+botManager = BotManager(bot)
 
 
 class CallListView(generic.ListView):  #FIRST SECTION, CALLS JUST COME AND HASN'T  ACCEPTED BY MANAGER YED
@@ -56,11 +61,11 @@ def setDriver(request):     #ATACHING CAR TO USERS CALL
                current_call.save()
 
                if(carTime!="0"):
-                   pass
-                   # SendOffer(chat_id=current_call.chat_id,car_type=carType,car_number=carNumber,arrival_time=carTime)
+
+                   BotManager.SendOffer(chat_id=current_call.chat_id,car_type=carType,car_number=carNumber,arrival_time=carTime)
                else:
-                   pass
-                   # SendOffer(chat_id=current_call.chat_id,car_type=carType,car_number=carNumber)
+
+                   BotManager.SendOffer(chat_id=current_call.chat_id,car_type=carType,car_number=carNumber)
 
 
      return HttpResponseRedirect(reverse("taxibot:callList"))
@@ -75,20 +80,17 @@ def EndCall(request):
     except:
         print("there are no selected calls")
     if (callId):
-        current_call = TaxiCall.objects.filter(call_id=callId)[0]
+        current_call = TaxiCall.objects.get(call_id=callId)
         current_call.status = "arrived"
         chat_id = current_call.chat_id
-        #SendArrived(chat_id=chat_id)
+        BotManager.SendArrived(chat_id=chat_id)
         current_call.chat_id = 0
         current_call.save()
 
 
     return HttpResponseRedirect(reverse("taxibot:accepted"))
 
-# запуск бота
-def CreateBot(request):
-    #StartBot()
-    return HttpResponseRedirect(reverse("taxibot:callList"))
+
 
 
 
@@ -97,49 +99,15 @@ def clearDB(request):  # delete all calls
     TaxiCall.objects.all().delete()
     return HttpResponseRedirect(reverse("taxibot:callList"))
 
-# создание нового заказа в бд
-def AddCall(user_chat_id,journey_type,user_number,user_coordinates=None,user_address=None,comments="нет"):
-    if(user_coordinates):
-        TaxiCall.objects.create(chat_id = user_chat_id,type=journey_type,number=user_number,details=comments,IsMap=True,longitude=user_coordinates[0],latitude=user_coordinates[1])
-
-    else:
-        TaxiCall.objects.create(chat_id = user_chat_id, type=journey_type, number=user_number, details=comments, address=user_address)
-
-# удаляет заказ из бд
-def RemoveCall(chat_id):
-    TaxiCall.objects.filter(chat_id=chat_id).delete()
-
-# принятие вызова (машина выезжает)
-def AcceptCall(chat_id):
-    current_call = TaxiCall.objects.filter(chat_id=chat_id)[0]
-    current_call.status = "accepted"
-    current_call.save()
-
-# отмена после принятия вызова(когда машина в пути ) сбрасывает id на 0, но сам заказ остается в бд
-def AcceptCancelCall(chat_id):
-    current_call = TaxiCall.objects.filter(chat_id=chat_id)[0]
-    current_call.status = "accepted_cancel"
-    current_call.chat_id = 0
-    current_call.save()
-
-# дпные о водителе из бд по chat_id
-def DriverInfo(chat_id):
-    current_call = TaxiCall.objects.filter(chat_id=chat_id)[0]
-    if(current_call):
-         driver = current_call.car_set.all()[0]
-         return {"car_number":driver.car_number,"car_type":driver.car_type,"time":driver.car_time,"driver_number":driver.driver_number}
-    else:
-        return None
 
 
-import telebot
-import json
-#from flask import Flask, request
 
 
-token = "309803225:AAEfkOtjUfLCTSHicJD05uy7AvilTCkzOYs"
 
-bot = telebot.TeleBot(token)
+####################################################################################################################################################################################
+####################################################################################################################################################################################
+####################################################################################################################################################################################
+# TELEBOT
 
 
 def webhook(request):
@@ -148,27 +116,29 @@ def webhook(request):
     return HttpResponseRedirect(reverse("taxibot:callList"))
 
 
-
-def test(request):
-
-
-    if(True):
-
-       return HttpResponse(True)
-
-    else:
-        return  HttpResponse("failed")
-
-
-
-
 def getUpdate(request):
-    UpdateObj = json.loads(request.body.decode("utf-8"))
 
-    message = UpdateObj["message"]
-    chat_id = message["chat"]["id"]
-    text = message["text"]
-    TaxiCall.objects.create(chat_id=chat_id, type="HAH2", number="2324", details="sfcsaf",
-                            address=text)
-    bot.send_message(chat_id=chat_id,text=text+" Mashallah")
+    UpdateObj = json.loads(request.body.decode("utf-8"))
+    UpdateManager(UpdateObj)
+
     return JsonResponse({'ok': True})
+
+
+
+def UpdateManager(Update):
+    if(Update["message"]):
+        message = Update["message"]
+        if(message["contact"]):
+            BotManager.GetContact(message)
+        elif(message["location"]):
+            BotManager.get_location(message)
+        elif(message["text"]):
+            BotManager.textManager(Update["message"])
+
+    elif(Update["callback_query"]):
+        BotManager.inlineManager(Update["callback_query"])
+
+
+
+
+

@@ -76,7 +76,7 @@ def callback_inline(call):
 
         elif call.data in ["trip", "ship", "delivery"]:
             call_manager.AddCall(new_chat_id=call.message.chat.id)
-            call_manager.UpdateCall(chat_id=call.message.chat.id, new_type=call.data)
+            call_manager.UpdateCall(chat_id=call.message.chat.id, new_type=types_of_tour[call.data])
             bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                   text="\n\n\nВы выбрали " + types_of_tour[call.data])
             RequireLocation(call.message)

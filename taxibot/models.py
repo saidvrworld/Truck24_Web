@@ -13,11 +13,12 @@ class TaxiCall(models.Model):
     longitude = models.FloatField(default=0.0)
     latitude = models.FloatField(default=0.0)
     address = models.CharField(max_length=500,default="None")
-    type = models.CharField(max_length=100)
-    number = models.CharField(max_length=20)
+    type = models.CharField(max_length=100,default="None")
+    number = models.CharField(max_length=20,default="None")
     details = models.CharField(max_length=500,default="None")
     call_time = models.TimeField(auto_now=True)
     status = models.CharField(max_length=30,default="new")
+    waiting_for = models.CharField(max_length=40,default="None")
 
 class Car(models.Model):
 
