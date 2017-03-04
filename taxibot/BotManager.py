@@ -109,6 +109,8 @@ class BotManager:
     def ChooseTypeOfTour(self,message):
         current_chat_id = message["chat"]["id"]
 
+        self.call_manager.RemoveCall(chat_id=current_chat_id)
+
         keyboard = telebot.types.InlineKeyboardMarkup()
         trip_button = telebot.types.InlineKeyboardButton(text="🚖 Поездка", callback_data="поездка")
         ship_button = telebot.types.InlineKeyboardButton(text="🍺 Перегон", callback_data="перегон")
@@ -265,7 +267,7 @@ class BotManager:
         message_id = message["message_id"]
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="отменено ")
-        self.call_manager.ResetCall(chat_id=current_chat_id)
+        self.call_manager.RemoveCall(chat_id=current_chat_id)
         self.ChooseTypeOfTour(message)
 
     # Отмена после предложения машины
