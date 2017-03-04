@@ -62,10 +62,10 @@ def setDriver(request):     #ATACHING CAR TO USERS CALL
 
                if(carTime!="0"):
 
-                   BotManager.SendOffer(chat_id=current_call.chat_id,car_type=carType,car_number=carNumber,arrival_time=carTime)
+                   botManager.SendOffer(chat_id=current_call.chat_id,car_type=carType,car_number=carNumber,arrival_time=carTime)
                else:
 
-                   BotManager.SendOffer(chat_id=current_call.chat_id,car_type=carType,car_number=carNumber)
+                   botManager.SendOffer(chat_id=current_call.chat_id,car_type=carType,car_number=carNumber)
 
 
      return HttpResponseRedirect(reverse("taxibot:callList"))
@@ -83,7 +83,7 @@ def EndCall(request):
         current_call = TaxiCall.objects.get(call_id=callId)
         current_call.status = "arrived"
         chat_id = current_call.chat_id
-        BotManager.SendArrived(chat_id=chat_id)
+        botManager.SendArrived(chat_id=chat_id)
         current_call.chat_id = 0
         current_call.save()
 
