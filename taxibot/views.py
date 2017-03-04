@@ -132,7 +132,7 @@ def UpdateManager(Update):
         keys = message.keys()
 
         if("text" in keys):
-            BotManager.textManager(message)
+            BotManager.textManager(message=message)
         elif("location" in keys):
             BotManager.get_location(message)
         elif("contact" in keys):
