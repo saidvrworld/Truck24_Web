@@ -132,14 +132,14 @@ def UpdateManager(Update):
         keys = message.keys()
 
         if("text" in keys):
-            BotManager.textManager(message=message)
+            botManager.textManager(message=message)
         elif("location" in keys):
-            BotManager.get_location(message)
+            botManager.get_location(message)
         elif("contact" in keys):
-            BotManager.GetContact(message)
+            botManager.GetContact(message)
 
     elif("callback_query" in keysOfUpdate):
-        BotManager.inlineManager(Update["callback_query"])
+        botManager.inlineManager(Update["callback_query"])
 
 
 
