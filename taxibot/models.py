@@ -9,7 +9,7 @@ class TaxiCall(models.Model):
 
     call_id = models.AutoField(primary_key=True)
     chat_id = models.IntegerField(default=0)
-    IsMap = models.BooleanField(default=False)
+    IsMap = models.BooleanField()
     longitude = models.FloatField(default=0.0)
     latitude = models.FloatField(default=0.0)
     address = models.CharField(max_length=500,default="None")

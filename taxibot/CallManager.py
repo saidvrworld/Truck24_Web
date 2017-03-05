@@ -10,7 +10,7 @@ class CallManager:
     """create and add new call with new chat_id"""
     def AddCall(self,new_chat_id):
         TaxiCall.objects.create(chat_id=new_chat_id, type="None", number="None", details="None",
-                                address="None",status = "building")
+                                address="None",status = "building",isMap=False)
 
 
     """ return call is it exist and None is it does not"""
