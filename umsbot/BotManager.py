@@ -45,8 +45,6 @@ class BotManager:
     def ShowMainMenu(self,message):
         current_chat_id = message["chat"]["id"]
 
-        self.call_manager.RemoveCall(chat_id=current_chat_id)
-
         keyboard = telebot.types.InlineKeyboardMarkup()
         button1 = telebot.types.InlineKeyboardButton(text="МОЙ БАЛАНС", callback_data="мой баланс")
         button2 = telebot.types.InlineKeyboardButton(text="ИНТЕРНЕТ-ПАКЕТЫ", callback_data="интернет-пакеты")
