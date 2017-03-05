@@ -134,9 +134,8 @@ class CallManager:
                 cur_call.status = status
 
             if(isMap):
-                self.GetCall(chat_id=chat_id).isMap = True
-                cur_call.details = "MAAAAAAp"
-                self.GetCall(chat_id=chat_id).save()
+                TaxiCall.objects.get(chat_id=chat_id).isMap = True
+                TaxiCall.objects.get(chat_id=chat_id).save()
             if(new_chat_id):
                 cur_call.chat_id=new_chat_id
 
