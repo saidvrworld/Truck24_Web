@@ -1,1 +1,1 @@
-web: gunicorn Taxi_Favorit.wsgi --log-file -
+web: gunicorn UMS_1.wsgi --log-file -

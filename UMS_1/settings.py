@@ -50,7 +50,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'Taxi_Favorit.urls'
+ROOT_URLCONF = 'UMS_1.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Taxi_Favorit.wsgi.application'
+WSGI_APPLICATION = 'UMS_1.wsgi.application'
 
 
 # Database
