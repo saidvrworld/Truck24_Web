@@ -92,7 +92,10 @@
         <td>{{ call.call_time }}</td>
         <td>{{ call.type }}</td>
         <td>{% if call.IsMap %}
-            {{call.longitude}}-{{ call.latitude }}
+             <form name={{ call.call_id }}>
+           <input class="mapbuttonmapbutton" type="button" name="formbutton1" value="показать на карте" onclick='initMap({{ call.latitude }},{{ call.longitude }});'">
+            </form>
+
             {% endif %}
             {% if not call.IsMap %}
                 {{ call.address }}
@@ -150,12 +153,28 @@
 
     <script type="text/javascript">
       var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 41.311701, lng: 69.278934},
-          zoom: 15
-        });
-      }
+      function initMap(id1,id2) {
+        var longitude = id1;
+        var latitude = id2;
+        if (longitude){
+              map = new google.maps.Map(document.getElementById('map'), {
+                   center: {lat: id1, lng: id2},
+                   zoom: 15
+               });
+
+              var marker = new google.maps.Marker({
+              position:  {lat: id1, lng: id2},
+              map: map,
+              title: 'Местоположение клиента!'
+              });
+        }
+        else{
+              map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: 10.0, lng: 10.0},
+              zoom: 15
+            });
+        }
+    }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg2dnWZ9CfzW39z8Gwy4IbhspCS-4mOYM&callback=initMap">
     </script>

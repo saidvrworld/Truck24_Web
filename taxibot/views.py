@@ -112,7 +112,7 @@ def clearDB(request):  # delete all calls
 
 def webhook(request):
     bot.remove_webhook()
-    bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/getupdate/")
+    bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/309803225:AAEfkOtjUfLCTSHicJD05uy7AvilTCkzOYs/")
     return HttpResponseRedirect(reverse("taxibot:callList"))
 
 

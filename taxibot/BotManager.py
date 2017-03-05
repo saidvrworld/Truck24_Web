@@ -97,6 +97,8 @@ class BotManager:
                 self.Accept(message=message)
             elif call_data == "cancelCall":
                 self.CancelCall(message)
+            elif call_data == "help":
+                self.Help(message)
 
     def Start(self,message):
         current_chat_id = message["chat"]["id"]
@@ -117,12 +119,15 @@ class BotManager:
         delivery_button = telebot.types.InlineKeyboardButton(text=" 🚛  Доставка", callback_data="доставка")
         advance_button = telebot.types.InlineKeyboardButton(text=" 🚛  Предварительный Заказ", callback_data="Предварительный Заказ")
         info_button = telebot.types.InlineKeyboardButton(text="💲 Тарифы", callback_data="price_list")
+        help_button = telebot.types.InlineKeyboardButton(text="⚙ Помощь", callback_data="help")
 
         keyboard.add(trip_button)
         keyboard.add(ship_button)
         keyboard.add(delivery_button)
         keyboard.add(advance_button)
         keyboard.add(info_button)
+        keyboard.add(help_button)
+
 
         self.bot.send_message(current_chat_id, "Выберите тип заказа", reply_markup=keyboard)
 

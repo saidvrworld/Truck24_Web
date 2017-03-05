@@ -9,6 +9,6 @@ urlpatterns = [url(r'^$', views.CallListView.as_view(), name='callList'),
                url(r'^accepted/$', views.acceptedCalls.as_view(), name='accepted'),
                url(r'^setArrived/$', views.EndCall, name='send_arrived'),
                url(r'^webhook/$', views.webhook, name='webhook'),
-               url(r'^getupdate/$', views.getUpdate, name='get_update'),
+               url(r'^309803225:AAEfkOtjUfLCTSHicJD05uy7AvilTCkzOYs/$', views.getUpdate, name='get_update'),
 
                ]
