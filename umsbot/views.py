@@ -8,7 +8,7 @@ import json
 
 
 
-token = "359231813:AAGTeb93BP9Gg-SDGPzpUAcvQdAzjd_qUe0"
+token = "373299176:AAEt8pYRhJRQpYC20kWqAAFBKWUECf-os5Y"
 
 bot = telebot.TeleBot(token)
 botManager = BotManager(bot)
