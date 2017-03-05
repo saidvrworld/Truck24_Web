@@ -111,7 +111,7 @@
         <td>{{ call.type }}</td>
         <td>{% if call.IsMap %}
             <form name={{ call.call_id }}>
-           <input class="button" type="button" name="formbutton1" value="карта" onclick='initMap({{ call.latitude }},{{ call.longitude }});'">
+           <input class="button" type="mapbutton" name="formbutton1" value="карта" onclick='initMap({{ call.latitude }},{{ call.longitude }});'">
             </form>
 
             {% endif %}
@@ -725,13 +725,19 @@
         if (longitude){
               map = new google.maps.Map(document.getElementById('map'), {
                    center: {lat: id1, lng: id2},
-                   zoom: 10
+                   zoom: 15
                });
-              }
+
+              var marker = new google.maps.Marker({
+              position:  {lat: id1, lng: id2},
+              map: map,
+              title: 'Местоположение клиента!'
+              });
+        }
         else{
               map = new google.maps.Map(document.getElementById('map'), {
               center: {lat: 10.0, lng: 10.0},
-              zoom: 10
+              zoom: 15
             });
         }
     }

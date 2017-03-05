@@ -53,4 +53,11 @@ header {
   font-size: 500%;
   text-transform: uppercase;
 }
+.mapbutton {
+    width : 150px;
+  color: #900;
+  font-weight: bold;
+  font-size: 600%;
+  text-transform: uppercase;
+}
 
