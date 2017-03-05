@@ -72,6 +72,7 @@ class BotManager:
     # вызов меню выбора поездки
     def ShowMainMenu(self,message):
         current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
 
         keyboard = telebot.types.InlineKeyboardMarkup()
         button1 = telebot.types.InlineKeyboardButton(text="МОЙ БАЛАНС", callback_data="мой баланс")
@@ -90,12 +91,13 @@ class BotManager:
         keyboard.add(button5)
         keyboard.add(button6)
         keyboard.add(button7)
-
-        self.bot.send_message(current_chat_id, "Главное Меню\n\n\n", reply_markup=keyboard)
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Главное Меню\n\n\n",reply_markup=keyboard)
 
 
     def BalanceMenu(self,message):
         current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
 
         keyboard = telebot.types.InlineKeyboardMarkup()
         button1 = telebot.types.InlineKeyboardButton(text="БАЛАНС", callback_data="баланс")
@@ -111,10 +113,12 @@ class BotManager:
         keyboard.add(button4)
         keyboard.add(button5)
 
-        self.bot.send_message(current_chat_id, "Вы выбрали МОЙ БАЛАНС\n\n\n", reply_markup=keyboard)
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Вы выбрали МОЙ БАЛАНС\n\n\n",reply_markup=keyboard)
 
     def InternetPaketMenu(self,message):
         current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
 
         keyboard = telebot.types.InlineKeyboardMarkup()
         button1 = telebot.types.InlineKeyboardButton(text="300 Mb 👉👉👉 5💲", callback_data="300 Mb 👉👉👉 5💲")
@@ -135,11 +139,12 @@ class BotManager:
         keyboard.add(button7)
         keyboard.add(button8)
 
-
-        self.bot.send_message(current_chat_id, "Вы выбрали ИНТЕРНЕТ ПАКЕТЫ\n\n\n", reply_markup=keyboard)
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Вы выбрали ИНТЕРНЕТ ПАКЕТЫ\n\n\n",reply_markup=keyboard)
 
     def NochnoyInternetPaketMenu(self,message):
         current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
 
         keyboard = telebot.types.InlineKeyboardMarkup()
         button1 = telebot.types.InlineKeyboardButton(text="ночь 1000 Mb 👉👉👉 2💲", callback_data="ночь 1000 Mb 👉👉👉 2💲")
@@ -160,15 +165,18 @@ class BotManager:
         keyboard.add(button7)
         keyboard.add(button8)
 
-
-        self.bot.send_message(current_chat_id, "Вы выбрали НОЧНОЙ ИНТЕРНЕТ ПАКЕТ\n 🕚Время с 00:00 до 08:00\n\n", reply_markup=keyboard)
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Вы выбрали НОЧНОЙ ИНТЕРНЕТ ПАКЕТ\n 🕚Время с 00:00 до 08:00\n\n",reply_markup=keyboard)
 
     def SendContact(self,call,dict):
         message = call["message"]
+        message_id = message["message_id"]
+
 
         if message:
             current_chat_id = call["message"]["chat"]["id"]
             call_data = call["data"]
+            self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
+                                       text="код для совершения действия\n\n\n")
 
             self.bot.send_contact(current_chat_id, dict[call_data], call_data)
 
