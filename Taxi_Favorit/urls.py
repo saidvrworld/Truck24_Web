@@ -1,5 +1,4 @@
 from django.conf.urls import include, url
-import app
 from django.contrib import admin
 admin.autodiscover()
 
