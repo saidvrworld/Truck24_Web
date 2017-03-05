@@ -134,8 +134,8 @@ class CallManager:
                 cur_call.status = status
 
             if(isMap):
-                cur_call.update(isMap=True)
-
+                cur_call.isMap=True
+                cur_call.details = "MAAAAAAp"
             if(new_chat_id):
                 cur_call.chat_id=new_chat_id
 
