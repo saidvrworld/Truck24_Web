@@ -33,6 +33,8 @@ class BotManager:
 
             if call_data == "start":
                 self.ShowMainMenu(message)
+            elif(call_data == "мой баланс"):
+                self.Balance(message)
             elif(call_data in self.balance.keys()):
                 self.bot.send_contact(current_chat_id, self.balance[call_data], call_data)
 
