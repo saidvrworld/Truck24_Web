@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxibot/templates/accepted.html" afterPath="$PROJECT_DIR$/taxibot/templates/accepted.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxibot/templates/index.html" afterPath="$PROJECT_DIR$/taxibot/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +45,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taxibot/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9690">
-              <caret line="736" column="4" lean-forward="false" selection-start-line="736" selection-start-column="4" selection-end-line="736" selection-end-column="4" />
+            <state relative-caret-position="360">
+              <caret line="113" column="98" lean-forward="false" selection-start-line="113" selection-start-column="98" selection-end-line="113" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -1006,8 +1005,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/taxibot/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9690">
-          <caret line="736" column="4" lean-forward="false" selection-start-line="736" selection-start-column="4" selection-end-line="736" selection-end-column="4" />
+        <state relative-caret-position="360">
+          <caret line="113" column="98" lean-forward="false" selection-start-line="113" selection-start-column="98" selection-end-line="113" selection-end-column="98" />
           <folding />
         </state>
       </provider>
