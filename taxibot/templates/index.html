@@ -110,6 +110,9 @@
         <td>{{ call.call_time }}</td>
         <td>{{ call.type }}</td>
         <td>{% if call.IsMap %}
+            <form name={{ call.call_id }}>
+           <input class="menubtm" type="button" name="formbutton1" value="карта" onclick='initMap({{ call.longitude }},{{ call.latitude }});'">
+            </form>
             {{call.longitude}}-{{ call.latitude }}
             {% endif %}
             {% if not call.IsMap %}
@@ -716,12 +719,22 @@
 
     <script type="text/javascript">
       var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 41.311701, lng: 69.278934},
-          zoom: 15
-        });
-      }
+      function initMap(id1,id2) {
+        var longitude = id1;
+        var latitude = id2;
+        if (longitude){
+              map = new google.maps.Map(document.getElementById('map'), {
+                   center: {lat: id1, lng: id2},
+                   zoom: 10
+               });
+              }
+        else{
+              map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: 10.0, lng: 10.0},
+              zoom: 10
+            });
+        }
+    }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg2dnWZ9CfzW39z8Gwy4IbhspCS-4mOYM&callback=initMap">
     </script>
