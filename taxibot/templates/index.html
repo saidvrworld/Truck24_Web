@@ -111,7 +111,7 @@
         <td>{{ call.type }}</td>
         <td>{% if call.IsMap %}
             <form name={{ call.call_id }}>
-           <input class="button" type="mapbutton" name="formbutton1" value="карта" onclick='initMap({{ call.latitude }},{{ call.longitude }});'">
+           <input class="mapbuttonmapbutton" type="button" name="formbutton1" value="карта" onclick='initMap({{ call.latitude }},{{ call.longitude }});'">
             </form>
 
             {% endif %}
