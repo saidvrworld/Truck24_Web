@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxibot/BotManager.py" afterPath="$PROJECT_DIR$/taxibot/BotManager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxibot/CallManager.py" afterPath="$PROJECT_DIR$/taxibot/CallManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxibot/templates/accepted.html" afterPath="$PROJECT_DIR$/taxibot/templates/accepted.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +25,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taxibot/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="135" column="20" lean-forward="false" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
+            <state relative-caret-position="469">
+              <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding>
                 <element signature="e#44#76#0" expanded="true" />
               </folding>
@@ -47,8 +47,8 @@
       <file leaf-file-name="BotManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taxibot/BotManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="162" column="7" lean-forward="false" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
+            <state relative-caret-position="229">
+              <caret line="161" column="111" lean-forward="false" selection-start-line="161" selection-start-column="111" selection-end-line="161" selection-end-column="111" />
               <folding>
                 <element signature="e#44#80#0" expanded="true" />
               </folding>
@@ -101,8 +101,8 @@
       <file leaf-file-name="LocalBotTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taxibot/LocalBotTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-452">
-              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="208">
+              <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
               <folding>
                 <element signature="e#238#252#0" expanded="true" />
               </folding>
@@ -113,13 +113,13 @@
       <file leaf-file-name="CallManager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taxibot/CallManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="140" column="31" lean-forward="true" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+            <state relative-caret-position="574">
+              <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
               <folding>
-                <element signature="e#2045#2291#0" expanded="false" />
-                <element signature="e#2335#2583#0" expanded="false" />
-                <element signature="e#2631#2893#0" expanded="false" />
-                <element signature="e#2936#3190#0" expanded="false" />
+                <element signature="e#2040#2286#0" expanded="false" />
+                <element signature="e#2330#2578#0" expanded="false" />
+                <element signature="e#2626#2888#0" expanded="false" />
+                <element signature="e#2931#3185#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -976,43 +976,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/taxibot/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="135" column="20" lean-forward="false" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
+        <state relative-caret-position="469">
+          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding>
             <element signature="e#44#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taxibot/BotManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="162" column="7" lean-forward="false" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
-          <folding>
-            <element signature="e#44#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taxibot/LocalBotTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        <state relative-caret-position="208">
+          <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
           <folding>
             <element signature="e#238#252#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taxibot/BotManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="161" column="111" lean-forward="false" selection-start-line="161" selection-start-column="111" selection-end-line="161" selection-end-column="111" />
+          <folding>
+            <element signature="e#44#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/taxibot/CallManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="140" column="31" lean-forward="true" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+        <state relative-caret-position="574">
+          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding>
-            <element signature="e#2045#2291#0" expanded="false" />
-            <element signature="e#2335#2583#0" expanded="false" />
-            <element signature="e#2631#2893#0" expanded="false" />
-            <element signature="e#2936#3190#0" expanded="false" />
+            <element signature="e#2040#2286#0" expanded="false" />
+            <element signature="e#2330#2578#0" expanded="false" />
+            <element signature="e#2626#2888#0" expanded="false" />
+            <element signature="e#2931#3185#0" expanded="false" />
           </folding>
         </state>
       </provider>

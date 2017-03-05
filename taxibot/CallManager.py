@@ -31,7 +31,7 @@ class CallManager:
 
 
     """ update atributes of call , change value if you sign it in params"""
-    def UpdateCall(self, chat_id, new_type=None, new_coordinates = None, new_address = None, new_number = None, new_details = None,new_waiting_for = None,new_status=None,new_isMap="None",new_chat_id=None):
+    def UpdateCall(self, chat_id, new_type=None, new_coordinates = None, new_address = None, new_number = None, new_details = None,new_waiting_for = None,new_status=None,new_isMap=0,new_chat_id=None):
 
         if(self._IsCall(chat_id)):
              self._UpdateData(chat_id=chat_id,type=new_type,coordinates=new_coordinates,address=new_address,number=new_number,
@@ -113,46 +113,33 @@ class CallManager:
         if(cur_call):
             if (type):
                cur_call.type = type
-               cur_call.save()
 
             if (coordinates):
                cur_call.longitude = coordinates[0]
                cur_call.latitude = coordinates[1]
-               cur_call.save()
 
-            if (address):
+            elif (address):
                cur_call.address = address
-               cur_call.save()
 
             if (number):
                 cur_call.number = number
-                cur_call.save()
 
             if(waiting_for):
                 cur_call.waiting_for = waiting_for
-                cur_call.save()
 
             if(details):
                 cur_call.details = details
-                cur_call.save()
 
             if (status):
                 cur_call.status = status
-                cur_call.save()
 
             if(isMap):
-                if(isMap=="True"):
-                    cur_call.isMap=True
-                elif(isMap=="False"):
-                    cur_call.isMap=False
-                cur_call.save()
+                cur_call.isMap = True
 
             if(new_chat_id):
                 cur_call.chat_id=new_chat_id
-                cur_call.save()
 
-
-
+            cur_call.save()
 
     """return call by chat_id """
     def _GetCallByID(self,chat_id):

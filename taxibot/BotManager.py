@@ -159,7 +159,7 @@ class BotManager:
         latitude = message["location"]["latitude"]
         longitude = message["location"]["longitude"]
 
-        self.call_manager.UpdateCall(chat_id=current_chat_id, new_coordinates=(longitude, latitude),new_isMap="True")
+        self.call_manager.UpdateCall(chat_id=current_chat_id, new_coordinates=(longitude, latitude),new_isMap=1)
         self.requestPhone(message)
 
     # показывает кнопку отправки контакта
