@@ -25,9 +25,8 @@ def getUpdate(request):
 
     UpdateObj = json.loads(request.body.decode("utf-8"))
 
-    #UpdateManager(UpdateObj)
-    message = UpdateObj["message"]
-    bot.send_message(chat_id=message["chat"]["id"],text="Hello")
+    UpdateManager(UpdateObj)
+
     return JsonResponse({'ok': True})
 
 
