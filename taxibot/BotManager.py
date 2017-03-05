@@ -117,7 +117,7 @@ class BotManager:
         trip_button = telebot.types.InlineKeyboardButton(text="🚖 Поездка", callback_data="поездка")
         ship_button = telebot.types.InlineKeyboardButton(text="🍺 Перегон", callback_data="перегон")
         delivery_button = telebot.types.InlineKeyboardButton(text=" 🚛  Доставка", callback_data="доставка")
-        advance_button = telebot.types.InlineKeyboardButton(text=" 🚛  Предварительный Заказ", callback_data="Предварительный Заказ")
+        advance_button = telebot.types.InlineKeyboardButton(text=" 🕚  Предварительный Заказ", callback_data="Предварительный Заказ")
         info_button = telebot.types.InlineKeyboardButton(text="💲 Тарифы", callback_data="price_list")
         help_button = telebot.types.InlineKeyboardButton(text="⚙ Помощь", callback_data="help")
 
