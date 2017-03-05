@@ -2,38 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Taxi_Favorit/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Taxi_Favorit/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Taxi_Favorit/static/humans.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Taxi_Favorit/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Taxi_Favorit/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/BotManager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/CallManager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/LocalBotTest.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/migrations/0002_car_driver_number.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/migrations/0003_delete_question.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/migrations/0004_auto_20170304_2121.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/static/css/framework.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/static/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/static/css/material.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/static/js/full_page_renderer-6a7ef05630a3b44589efb7a5bfeb3df1d28e15a2112edff69a038f1dba09aea5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/static/js/material.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/templates/accepted.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/templates/fullpage-de5c59fc8cc3ffdede90c89f012d90d76287ab67fbf6c7898f73f48065b48747.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/templates/waiting_calls.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxibot/views.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMS_1/settings.py" afterPath="$PROJECT_DIR$/UMS_1/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umsbot/urls.py" afterPath="$PROJECT_DIR$/umsbot/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umsbot/views.py" afterPath="$PROJECT_DIR$/umsbot/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,16 +22,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umsbot/admin.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umsbot/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -135,11 +96,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UMS_1/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umsbot/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#44#93#0" expanded="true" />
               </folding>
@@ -195,14 +166,14 @@
         <option value="$PROJECT_DIR$/taxibot/BotManager.py" />
         <option value="$PROJECT_DIR$/taxibot/views.py" />
         <option value="$PROJECT_DIR$/taxibot/admin.py" />
-        <option value="$PROJECT_DIR$/UMS_1/settings.py" />
         <option value="$PROJECT_DIR$/UMS_1/urls.py" />
         <option value="$PROJECT_DIR$/UMS_1/wsgi.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/umsbot/apps.py" />
-        <option value="$PROJECT_DIR$/umsbot/urls.py" />
         <option value="$PROJECT_DIR$/umsbot/views.py" />
+        <option value="$PROJECT_DIR$/umsbot/urls.py" />
+        <option value="$PROJECT_DIR$/UMS_1/settings.py" />
       </list>
     </option>
   </component>
@@ -756,16 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UMS_1/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-          <folding>
-            <element signature="e#333#342#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile.windows">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -890,22 +851,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/urls.py">
+    <entry file="file://$PROJECT_DIR$/UMS_1/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umsbot/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#44#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umsbot/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

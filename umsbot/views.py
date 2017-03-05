@@ -17,7 +17,7 @@ botManager = BotManager(bot)
 
 def webhook(request):
     bot.remove_webhook()
-    bot.set_webhook(url="https://favorittaxi.herokuapp.com/taxibot/309803225:AAEfkOtjUfLCTSHicJD05uy7AvilTCkzOYs/")
+    bot.set_webhook(url="https://umsdiller.herokuapp.com/umsbot/359231813:AAGTeb93BP9Gg-SDGPzpUAcvQdAzjd_qUe0")
     return HttpResponse("ok")
 
 
