@@ -30,6 +30,8 @@ class BotManager:
     uslugi_info = {"МОБИЛЬНЫЙ ИНТЕРНЕТ ВКЛЮЧЕНИЕ":"*111*0011#","МОБИЛНЫЙ ИНТЕРНЕТ ОТКЛЮЧЕНИЕ":"*111*0010#","МЕЖДУНАРОДНЫЕ ЗВОНКИ ВКЛЮЧИТЬ":"*111*0021#","МЕЖДУНАРОДНЫЕ ЗВОНКИ ОТКЛЮЧИТЬ":"*111*0020#",
                    "FAMILY включить":"*111*0031#","FAMILY отключить":"*111*0030#","ЗАПРЕТ РАССЫЛОК ВКЛЮЧИТЬ":"*111*0271#","ЗАПРЕТ РАССЫЛОК ОТКЛЮЧИТЬ":"*111*0271#","SUPER 0":"*166#"}
 
+    settings_info = {"ПОЛУЧИТЬ НАСТРОЙКИ ИНТЕРНЕТ":"*111*021#","Запрет входящих звонков и SMS – включить":"*35*0000#","Запрет входящих звонков и SMS - отключить":"#35*0000#","Запрет исходящих звонков – включить":"*33*0000#","Запрет исходящих звонков – отключить":"#33*0000#"}
+
     bot = None
 
 
@@ -73,6 +75,8 @@ class BotManager:
                 self.SMSPaket(message)
             elif (call_data == "услуги"):
                 self.Uslugi(message)
+            elif (call_data == "настройки"):
+                self.Uslugi(message)
 
             elif(call_data in self.internet_paket.keys()):
                 self.SendContact(call,self.internet_paket)
@@ -100,6 +104,9 @@ class BotManager:
 
             elif (call_data in self.uslugi_info.keys()):
                 self.SendContact(call, self.uslugi_info)
+
+            elif (call_data in self.settings_info.keys()):
+                self.SendContact(call, self.settings_info)
 
 
 
@@ -129,6 +136,8 @@ class BotManager:
         button7 = telebot.types.InlineKeyboardButton(text="ОПЦИЯ 'Пакеты Минут!'", callback_data="пакеты минут")
         button8 = telebot.types.InlineKeyboardButton(text="СМС Пакеты", callback_data="смс пакеты")
         button9 = telebot.types.InlineKeyboardButton(text="УСЛУГИ", callback_data="услуги")
+        button10 = telebot.types.InlineKeyboardButton(text="НАСТРОЙКИ", callback_data="настройки")
+
 
 
 
@@ -142,6 +151,8 @@ class BotManager:
         keyboard.add(button7)
         keyboard.add(button8)
         keyboard.add(button9)
+        keyboard.add(button10)
+
 
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Главное Меню\n\n\n",reply_markup=keyboard)
@@ -356,6 +367,31 @@ class BotManager:
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
                                    text="Вы выбрали Услуги",
+                                   reply_markup=keyboard)
+
+    def  Nastroyki(self, message):
+        current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
+        keyboard = telebot.types.InlineKeyboardMarkup()
+        button1 = telebot.types.InlineKeyboardButton(text="ПОЛУЧИТЬ НАСТРОЙКИ ИНТЕРНЕТ", callback_data="ПОЛУЧИТЬ НАСТРОЙКИ ИНТЕРНЕТ")
+        button2 = telebot.types.InlineKeyboardButton(text="Запрет входящих звонков и SMS – включить", callback_data="Запрет входящих звонков и SMS – включить")
+        button3 = telebot.types.InlineKeyboardButton(text="Запрет входящих звонков и SMS - отключить", callback_data="Запрет входящих звонков и SMS - отключить")
+        button4 = telebot.types.InlineKeyboardButton(text="Запрет исходящих звонков – включить", callback_data="Запрет исходящих звонков – включить")
+        button5 = telebot.types.InlineKeyboardButton(text="Запрет исходящих звонков – отключить", callback_data="Запрет исходящих звонков – отключить")
+
+
+        keyboard.add(button1)
+        keyboard.add(button2)
+        keyboard.add(button3)
+        keyboard.add(button4)
+        keyboard.add(button5)
+
+
+
+
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
+                                   text="Вы выбрали Настройки",
                                    reply_markup=keyboard)
 
     def SendContact(self,call,dict):
