@@ -54,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/umsbot/BotManager.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="603">
-              <caret line="405" column="80" lean-forward="false" selection-start-line="405" selection-start-column="80" selection-end-line="405" selection-end-column="80" />
+              <caret line="405" column="93" lean-forward="false" selection-start-line="405" selection-start-column="93" selection-end-line="405" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -872,7 +872,7 @@
     <entry file="file://$PROJECT_DIR$/umsbot/BotManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
-          <caret line="405" column="80" lean-forward="false" selection-start-line="405" selection-start-column="80" selection-end-line="405" selection-end-column="80" />
+          <caret line="405" column="93" lean-forward="false" selection-start-line="405" selection-start-column="93" selection-end-line="405" selection-end-column="93" />
           <folding />
         </state>
       </provider>
