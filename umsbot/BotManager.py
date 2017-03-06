@@ -27,6 +27,9 @@ class BotManager:
 
     paket_sms = {"SMS 100👉$1":"*111*018*1#","SMS 300👉$2,4":"*111*018*2#","ПРОВЕРИТЬ ОСТАТОК CМС ПАКЕТА":"*111*018#",}
 
+    uslugi_info = {"МОБИЛЬНЫЙ ИНТЕРНЕТ ВКЛЮЧЕНИЕ":"*111*0011#","МОБИЛНЫЙ ИНТЕРНЕТ ОТКЛЮЧЕНИЕ":"*111*0010#","МЕЖДУНАРОДНЫЕ ЗВОНКИ ВКЛЮЧИТЬ":"*111*0021#","МЕЖДУНАРОДНЫЕ ЗВОНКИ ОТКЛЮЧИТЬ":"*111*0020#",
+                   "FAMILY включить":"*111*0031#","FAMILY отключить":"*111*0030#","ЗАПРЕТ РАССЫЛОК ВКЛЮЧИТЬ":"*111*0271#","ЗАПРЕТ РАССЫЛОК ОТКЛЮЧИТЬ":"*111*0271#","SUPER 0":"*166#"}
+
     bot = None
 
 
@@ -68,6 +71,8 @@ class BotManager:
                 self.PaketMinut(message)
             elif (call_data == "смс пакеты"):
                 self.SMSPaket(message)
+            elif (call_data == "услуги"):
+                self.Uslugi(message)
 
             elif(call_data in self.internet_paket.keys()):
                 self.SendContact(call,self.internet_paket)
@@ -92,6 +97,9 @@ class BotManager:
 
             elif (call_data in self.paket_sms.keys()):
                 self.SendContact(call, self.paket_sms)
+
+            elif (call_data in self.uslugi_info.keys()):
+                self.SendContact(call, self.uslugi_info)
 
 
 
@@ -120,6 +128,8 @@ class BotManager:
         button6 = telebot.types.InlineKeyboardButton(text="ТАРИФЫ", callback_data="тарифы")
         button7 = telebot.types.InlineKeyboardButton(text="ОПЦИЯ 'Пакеты Минут!'", callback_data="пакеты минут")
         button8 = telebot.types.InlineKeyboardButton(text="СМС Пакеты", callback_data="смс пакеты")
+        button9 = telebot.types.InlineKeyboardButton(text="УСЛУГИ", callback_data="услуги")
+
 
 
 
@@ -131,6 +141,8 @@ class BotManager:
         keyboard.add(button6)
         keyboard.add(button7)
         keyboard.add(button8)
+        keyboard.add(button9)
+
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Главное Меню\n\n\n",reply_markup=keyboard)
 
@@ -314,6 +326,37 @@ class BotManager:
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="\n"+sms_info+"\nСтоимость пакета снимается при активации.\nСрок действия пакета - 30 календарных дней с момента активации",reply_markup=keyboard)
 
+    def Uslugi(self, message):
+        current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
+        keyboard = telebot.types.InlineKeyboardMarkup()
+        button1 = telebot.types.InlineKeyboardButton(text="МОБИЛЬНЫЙ ИНТЕРНЕТ ВКЛЮЧЕНИЕ", callback_data="МОБИЛЬНЫЙ ИНТЕРНЕТ ВКЛЮЧЕНИЕ")
+        button2 = telebot.types.InlineKeyboardButton(text="МОБИЛНЫЙ ИНТЕРНЕТ ОТКЛЮЧЕНИЕ", callback_data="МОБИЛНЫЙ ИНТЕРНЕТ ОТКЛЮЧЕНИЕ")
+        button3 = telebot.types.InlineKeyboardButton(text="МЕЖДУНАРОДНЫЕ ЗВОНКИ ВКЛЮЧИТЬ", callback_data="МЕЖДУНАРОДНЫЕ ЗВОНКИ ВКЛЮЧИТЬ")
+        button4 = telebot.types.InlineKeyboardButton(text="МЕЖДУНАРОДНЫЕ ЗВОНКИ ОТКЛЮЧИТЬ", callback_data="МЕЖДУНАРОДНЫЕ ЗВОНКИ ОТКЛЮЧИТЬ")
+        button5 = telebot.types.InlineKeyboardButton(text="FAMILY включить", callback_data="FAMILY включить")
+        button6 = telebot.types.InlineKeyboardButton(text="FAMILY отключить", callback_data="FAMILY отключить")
+        button7 = telebot.types.InlineKeyboardButton(text="ЗАПРЕТ РАССЫЛОК ВКЛЮЧИТЬ", callback_data="ЗАПРЕТ РАССЫЛОК ВКЛЮЧИТЬ")
+        button8 = telebot.types.InlineKeyboardButton(text="ЗАПРЕТ РАССЫЛОК ОТКЛЮЧИТЬ", callback_data="ЗАПРЕТ РАССЫЛОК ОТКЛЮЧИТЬ")
+        button9 = telebot.types.InlineKeyboardButton(text="SUPER 0", callback_data="SUPER 0")
+
+
+        keyboard.add(button1)
+        keyboard.add(button2)
+        keyboard.add(button3)
+        keyboard.add(button4)
+        keyboard.add(button5)
+        keyboard.add(button6)
+        keyboard.add(button7)
+        keyboard.add(button8)
+        keyboard.add(button9)
+
+
+
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
+                                   text="Вы выбрали Услуги",
+                                   reply_markup=keyboard)
 
     def SendContact(self,call,dict):
         message = call["message"]
