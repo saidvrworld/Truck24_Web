@@ -60,7 +60,7 @@ class BotManager:
             elif (call_data == "мини интернет пакеты"):
                 self.MiniInternetPaketMenu(message)
             elif (call_data == "тарифы"):
-                self.MiniInternetPaketMenu(message)
+                self.Tarif(message)
 
             elif(call_data in self.internet_paket.keys()):
                 self.SendContact(call,self.internet_paket)
