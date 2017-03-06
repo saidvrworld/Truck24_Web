@@ -13,8 +13,16 @@ class BotManager:
                      "5000 Mb 👉👉👉 35💲": "*171*019*4*010100342*1#","10000 Mb 👉👉👉 55💲": "*171*019*6*010100342*1#",
                      "ОСТАТОК ТРАФИКА":"*171*019#"}
 
-    nochnoy_internet_paket = {"ночь 1000 Mb 👉👉👉 2💲":"*171*203*1000*010100342*1#","ночь 2000 Mb 👉👉👉 3,5💲":"*171*203*2000*010100342*1#","ночь 3000 Mb 👉👉👉 5💲":"*171*203*3000*010100342*1#","ночь 5000 Mb 👉👉👉 7💲":"*171*203*5000*010100342*1#",
-                              "ночь 10000 Mb 👉👉👉 10💲":"*171*203*10000*010100342*1#","ночь 20000 Mb 👉👉👉 15💲":"*171*203*20000*010100342*1#","ночь 50000 Mb 👉👉👉 20💲":"*171*203*50000*010100342*1#","ОСТАТОК НОЧНОГО ТРАФИКА":"*203#"}
+    nochnoy_internet_paket = {"ночь 1000 Mb 👉2💲":"*171*203*1000*010100342*1#","ночь 2000 Mb 👉3,5💲":"*171*203*2000*010100342*1#","ночь 3000 Mb 👉5💲":"*171*203*3000*010100342*1#","ночь 5000 Mb 👉7💲":"*171*203*5000*010100342*1#",
+                              "ночь 10000 Mb 👉10💲":"*171*203*10000*010100342*1#","ночь 20000 Mb 👉15💲":"*171*203*20000*010100342*1#","ночь 50000 Mb 👉20💲":"*171*203*50000*010100342*1#","ОСТАТОК НОЧНОГО ТРАФИКА":"*203#"}
+
+    nochnoy_drive = {"1 сутка 👉3💲":"*171*200*1*010100342*1#","7 суток 👉15💲":"*171*200*7*010100342*1#","30 суток 👉40💲":"*171*200*30*010100342*1#",}
+
+    mini_internet_paket = {"50 Mb 👉1,5💲":"*171*204*50*010100342*1#","100 Mb 👉2,5💲":"*171*204*100*010100342*1#"}
+
+    tarif_price ={"TERMINAL👉$3/месяц":"*171*112*010100342*1#","OPTIMA 333👉$6/месяц":"*171*333*010100342*1#","555👉$8/месяц":"*171*555*010100342*1#","777👉$10/месяц":"*171*777*010100342*1#","MAXI NEW👉$15/месяц":"*171*105*010100342*1#",
+                  "ULTRA👉$25/месяц":"*171*103*010100342*1#","Perfect👉$35/месяц":"*171*111*010100342*1#","Baraka👉$0,20/день":"*171*109*010100342*1#",}
+
 
     bot = None
 
@@ -47,6 +55,12 @@ class BotManager:
                 self.InternetPaketMenu(message)
             elif(call_data=="ночной интернет пакет"):
                 self.NochnoyInternetPaketMenu(message)
+            elif(call_data=="ночной drive"):
+                self.NochnoyDrive(message)
+            elif (call_data == "мини интернет пакеты"):
+                self.MiniInternetPaketMenu(message)
+            elif (call_data == "тарифы"):
+                self.MiniInternetPaketMenu(message)
 
             elif(call_data in self.internet_paket.keys()):
                 self.SendContact(call,self.internet_paket)
@@ -56,6 +70,15 @@ class BotManager:
 
             elif (call_data in self.nochnoy_internet_paket.keys()):
                 self.SendContact(call, self.nochnoy_internet_paket)
+
+            elif (call_data in self.nochnoy_drive.keys()):
+                self.SendContact(call, self.nochnoy_drive)
+
+            elif (call_data in self.mini_internet_paket.keys()):
+                self.SendContact(call, self.mini_internet_paket)
+
+            elif (call_data in self.tarif_price.keys()):
+                self.SendContact(call, self.tarif_price)
 
 
 
@@ -147,13 +170,13 @@ class BotManager:
 
 
         keyboard = telebot.types.InlineKeyboardMarkup()
-        button1 = telebot.types.InlineKeyboardButton(text="ночь 1000 Mb 👉👉👉 2💲", callback_data="ночь 1000 Mb 👉👉👉 2💲")
-        button2 = telebot.types.InlineKeyboardButton(text="ночь 2000 Mb 👉👉👉 3,5💲", callback_data="ночь 2000 Mb 👉👉👉 3,5💲")
-        button3 = telebot.types.InlineKeyboardButton(text="ночь 3000 Mb 👉👉👉 5💲", callback_data="ночь 3000 Mb 👉👉👉 5💲")
-        button4 = telebot.types.InlineKeyboardButton(text="ночь 5000 Mb 👉👉👉 7💲", callback_data="ночь 5000 Mb 👉👉👉 7💲")
-        button5 = telebot.types.InlineKeyboardButton(text="ночь 10000 Mb 👉👉👉 10💲", callback_data="ночь 10000 Mb 👉👉👉 10💲")
-        button6 = telebot.types.InlineKeyboardButton(text="ночь 20000 Mb 👉👉👉 15💲", callback_data="ночь 20000 Mb 👉👉👉 15💲")
-        button7 = telebot.types.InlineKeyboardButton(text="ночь 50000 Mb 👉👉👉 20💲", callback_data="ночь 50000 Mb 👉👉👉 20💲")
+        button1 = telebot.types.InlineKeyboardButton(text="ночь 1000 Mb 👉2💲", callback_data="ночь 1000 Mb 👉2💲")
+        button2 = telebot.types.InlineKeyboardButton(text="ночь 2000 Mb 👉3,5💲", callback_data="ночь 2000 Mb 👉3,5💲")
+        button3 = telebot.types.InlineKeyboardButton(text="ночь 3000 Mb 👉5💲", callback_data="ночь 3000 Mb 👉5💲")
+        button4 = telebot.types.InlineKeyboardButton(text="ночь 5000 Mb 👉7💲", callback_data="ночь 5000 Mb 👉7💲")
+        button5 = telebot.types.InlineKeyboardButton(text="ночь 10000 Mb 👉10💲", callback_data="ночь 10000 Mb 👉10💲")
+        button6 = telebot.types.InlineKeyboardButton(text="ночь 20000 Mb 👉15💲", callback_data="ночь 20000 Mb 👉15💲")
+        button7 = telebot.types.InlineKeyboardButton(text="ночь 50000 Mb 👉20💲", callback_data="ночь 50000 Mb 👉20💲")
         button8 = telebot.types.InlineKeyboardButton(text="ОСТАТОК НОЧНОГО ТРАФИКА", callback_data="ОСТАТОК НОЧНОГО ТРАФИКА")
 
         keyboard.add(button1)
@@ -166,6 +189,73 @@ class BotManager:
         keyboard.add(button8)
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Вы выбрали НОЧНОЙ ИНТЕРНЕТ ПАКЕТ\n 🕚Время с 00:00 до 08:00\n\n",reply_markup=keyboard)
+
+    def NochnoyDrive(self, message):
+        current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
+        keyboard = telebot.types.InlineKeyboardMarkup()
+        button1 = telebot.types.InlineKeyboardButton(text="1 сутка 👉3💲", callback_data="1 сутка 👉3💲")
+        button2 = telebot.types.InlineKeyboardButton(text="7 суток 👉15💲", callback_data="7 суток 👉15💲")
+        button3 = telebot.types.InlineKeyboardButton(text="30 суток 👉40💲", callback_data="30 суток 👉40💲")
+
+
+        keyboard.add(button1)
+        keyboard.add(button2)
+        keyboard.add(button3)
+
+
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
+                                   text="Вы выбрали НОЧНОЙ DRIVE\n 🕚Время с 00:00 до 08:00\n\n",
+                                   reply_markup=keyboard)
+
+
+    def MiniInternetPaketMenu(self,message):
+        current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
+
+        keyboard = telebot.types.InlineKeyboardMarkup()
+        button1 = telebot.types.InlineKeyboardButton(text="50 Mb 👉1,5💲", callback_data="50 Mb 👉1,5💲")
+        button2 = telebot.types.InlineKeyboardButton(text="100 Mb 👉2,5💲", callback_data="100 Mb 👉2,5💲")
+
+
+        keyboard.add(button1)
+        keyboard.add(button2)
+
+
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Вы выбрали МИНИ ИНТЕРНЕТ ПАКЕТЫ\n 🕚Срок действия всех мини интернет пакетов 1 сутки\n\n",reply_markup=keyboard)
+
+
+    def Tarif(self,message):
+        current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
+
+        keyboard = telebot.types.InlineKeyboardMarkup()
+        button1 = telebot.types.InlineKeyboardButton(text="TERMINAL👉$3/месяц", callback_data="TERMINAL👉$3/месяц")
+        button2 = telebot.types.InlineKeyboardButton(text="OPTIMA 333👉$6/месяц", callback_data="OPTIMA 333👉$6/месяц")
+        button3 = telebot.types.InlineKeyboardButton(text="555👉$8/месяц", callback_data="555👉$8/месяц")
+        button4 = telebot.types.InlineKeyboardButton(text="777👉$10/месяц", callback_data="777👉$10/месяц")
+        button5 = telebot.types.InlineKeyboardButton(text="MAXI NEW👉$15/месяц", callback_data="MAXI NEW👉$15/месяц")
+        button6 = telebot.types.InlineKeyboardButton(text="ULTRA👉$25/месяц", callback_data="ULTRA👉$25/месяц")
+        button7 = telebot.types.InlineKeyboardButton(text="Perfect👉$35/месяц", callback_data="Perfect👉$35/месяц")
+        button8 = telebot.types.InlineKeyboardButton(text="Baraka👉$0,20/день", callback_data="Baraka👉$0,20/день")
+
+        keyboard.add(button1)
+        keyboard.add(button2)
+        keyboard.add(button3)
+        keyboard.add(button4)
+        keyboard.add(button5)
+        keyboard.add(button6)
+        keyboard.add(button7)
+        keyboard.add(button8)
+
+        perfect = "Рекомендуем смену тарифа в начале месяца так как Первоначальный авансовый платеж при подключении на тарифный план «Perfect» $35 (размер абонентской платы в полном объеме); не зависимо от того, какого числа месяца производится подключение на тарифный план"
+        baraka = "Для новых и существующих абонентов Андижанской, Наманганской, Ферганской, Хорезмской, Кашкадарьинской, Бухарской, Сырдарьинской, Джизакской, Навоийской, Сурхандарьинская областей, г. Чирчик, г. Янгиюль и Республики Каракалпакстан.\n Ежедневная абонентская плата – всего $0,20 в день!\n20 минут ежедневно на исходящие звонки по Узбекистану\n20 SMS ежедневно по Узбекистану·\nВходящие звонки $0\nБонус за пополнение - 20 Мегабайт при разовом пополнении баланса на сумму от$ 2\n"
+
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="на тарифном плане ОПТИМА 333 за «Super 0» есть абон плата $ 1 \n 🕚на трифном плане 555 за «Super 0» есть абон плата $ 1\n абон плата снимается за каждые 30 дней.\n 👇ТАРИФ Perfect👇\n "+perfect+"\n 👇Тариф Baraka👇\n"+baraka,reply_markup=keyboard)
+
 
     def SendContact(self,call,dict):
         message = call["message"]
