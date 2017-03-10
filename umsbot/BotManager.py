@@ -404,7 +404,7 @@ class BotManager:
             call_data = call["data"]
             self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
                                        text="код для выполнения действия\n👉"+call_data+"\n👉"+dict[call_data]+"\n")
-
+            self.bot.send_message(chat_id=current_chat_id,text=dict[call_data])
             self.bot.send_contact(current_chat_id, dict[call_data], call_data)
 
 
