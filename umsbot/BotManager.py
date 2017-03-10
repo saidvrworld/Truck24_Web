@@ -8,13 +8,13 @@ class BotManager:
 
 
     balance = {"баланс":"*100#","последняя оплата":"*171*1*2#","мой расход":"*171*1*3#","мой номер":"*150#","все мои номера":"*151#"}
-    internet_paket ={"300 Mb 👉👉👉 5💲":"*171*019*1*010100342*1#","500 Mb 👉👉👉 7💲":"*171*019*7*010100342*1#",
-                     "1000 Mb 👉👉👉 10💲":"*171*019*2*010100342*1#","2000 Mb 👉👉👉 18💲":"*171*019*5*010100342*1#","3000 Mb 👉👉👉 25💲":"*171*019*3*010100342*1#",
-                     "5000 Mb 👉👉👉 35💲": "*171*019*4*010100342*1#","10000 Mb 👉👉👉 55💲": "*171*019*6*010100342*1#",
+    internet_paket ={"купить 300 Mb":"*171*019*1*010100342*1#","купить 500 Mb":"*171*019*7*010100342*1#",
+                     "купить 1000 Mb":"*171*019*2*010100342*1#","купить 2000 Mb":"*171*019*5*010100342*1#","купить 3000 Mb":"*171*019*3*010100342*1#",
+                     "купить 5000 Mb": "*171*019*4*010100342*1#","купить 10000 Mb": "*171*019*6*010100342*1#",
                      "ОСТАТОК ТРАФИКА":"*171*019#"}
 
-    nochnoy_internet_paket = {"ночь 1000 Mb 👉2💲":"*171*203*1000*010100342*1#","ночь 2000 Mb 👉3,5💲":"*171*203*2000*010100342*1#","ночь 3000 Mb 👉5💲":"*171*203*3000*010100342*1#","ночь 5000 Mb 👉7💲":"*171*203*5000*010100342*1#",
-                              "ночь 10000 Mb 👉10💲":"*171*203*10000*010100342*1#","ночь 20000 Mb 👉15💲":"*171*203*20000*010100342*1#","ночь 50000 Mb 👉20💲":"*171*203*50000*010100342*1#","ОСТАТОК НОЧНОГО ТРАФИКА":"*203#"}
+    nochnoy_internet_paket = {"купить ночь 1000Mb":"*171*203*1000*010100342*1#","купить ночь 2000Mb":"*171*203*2000*010100342*1#","купить ночь 3000Mb":"*171*203*3000*010100342*1#","купить ночь 5000Mb":"*171*203*5000*010100342*1#",
+                              "купить ночь 10000Mb":"*171*203*10000*010100342*1#","купить ночь 20000Mb":"*171*203*20000*010100342*1#","купить ночь 50000Mb":"*171*203*50000*010100342*1#","ОСТАТОК НОЧНОГО ТРАФИКА":"*203#"}
 
     nochnoy_drive = {"1 сутка 👉3💲":"*171*200*1*010100342*1#","7 суток 👉15💲":"*171*200*7*010100342*1#","30 суток 👉40💲":"*171*200*30*010100342*1#"}
 
@@ -185,13 +185,13 @@ class BotManager:
 
 
         keyboard = telebot.types.InlineKeyboardMarkup()
-        button1 = telebot.types.InlineKeyboardButton(text="300 Mb 👉👉👉 5💲", callback_data="300 Mb 👉👉👉 5💲")
-        button2 = telebot.types.InlineKeyboardButton(text="500 Mb 👉👉👉 7💲", callback_data="500 Mb 👉👉👉 7💲")
-        button3 = telebot.types.InlineKeyboardButton(text="1000 Mb 👉👉👉 10💲", callback_data="1000 Mb 👉👉👉 10💲")
-        button4 = telebot.types.InlineKeyboardButton(text="2000 Mb 👉👉👉 18💲", callback_data="2000 Mb 👉👉👉 18💲")
-        button5 = telebot.types.InlineKeyboardButton(text="3000 Mb 👉👉👉 25💲", callback_data="3000 Mb 👉👉👉 25💲")
-        button6 = telebot.types.InlineKeyboardButton(text="5000 Mb 👉👉👉 35💲", callback_data="5000 Mb 👉👉👉 35💲")
-        button7 = telebot.types.InlineKeyboardButton(text="10000 Mb 👉👉👉 55💲", callback_data="10000 Mb 👉👉👉 55💲")
+        button1 = telebot.types.InlineKeyboardButton(text="300 Mb 👉👉👉 5💲", callback_data="купить 300 Mb")
+        button2 = telebot.types.InlineKeyboardButton(text="500 Mb 👉👉👉 7💲", callback_data="купить 500 Mb")
+        button3 = telebot.types.InlineKeyboardButton(text="1000 Mb 👉👉👉 10💲", callback_data="купить 1000 Mb")
+        button4 = telebot.types.InlineKeyboardButton(text="2000 Mb 👉👉👉 18💲", callback_data="купить 2000 Mb")
+        button5 = telebot.types.InlineKeyboardButton(text="3000 Mb 👉👉👉 25💲", callback_data="купить 3000 Mb")
+        button6 = telebot.types.InlineKeyboardButton(text="5000 Mb 👉👉👉 35💲", callback_data="купить 5000 Mb")
+        button7 = telebot.types.InlineKeyboardButton(text="10000 Mb 👉👉👉 55💲", callback_data="купить 10000 Mb")
         button8 = telebot.types.InlineKeyboardButton(text="ОСТАТОК ТРАФИКА", callback_data="ОСТАТОК ТРАФИКА")
 
         keyboard.add(button1)
@@ -211,13 +211,13 @@ class BotManager:
 
 
         keyboard = telebot.types.InlineKeyboardMarkup()
-        button1 = telebot.types.InlineKeyboardButton(text="ночь 1000 Mb 👉2💲", callback_data="ночь 1000 Mb 👉2💲")
-        button2 = telebot.types.InlineKeyboardButton(text="ночь 2000 Mb 👉3,5💲", callback_data="ночь 2000 Mb 👉3,5💲")
-        button3 = telebot.types.InlineKeyboardButton(text="ночь 3000 Mb 👉5💲", callback_data="ночь 3000 Mb 👉5💲")
-        button4 = telebot.types.InlineKeyboardButton(text="ночь 5000 Mb 👉7💲", callback_data="ночь 5000 Mb 👉7💲")
-        button5 = telebot.types.InlineKeyboardButton(text="ночь 10000 Mb 👉10💲", callback_data="ночь 10000 Mb 👉10💲")
-        button6 = telebot.types.InlineKeyboardButton(text="ночь 20000 Mb 👉15💲", callback_data="ночь 20000 Mb 👉15💲")
-        button7 = telebot.types.InlineKeyboardButton(text="ночь 50000 Mb 👉20💲", callback_data="ночь 50000 Mb 👉20💲")
+        button1 = telebot.types.InlineKeyboardButton(text="ночь 1000 Mb 👉2💲", callback_data="купить ночь 1000Mb")
+        button2 = telebot.types.InlineKeyboardButton(text="ночь 2000 Mb 👉3,5💲", callback_data="купить ночь 2000Mb")
+        button3 = telebot.types.InlineKeyboardButton(text="ночь 3000 Mb 👉5💲", callback_data="купить ночь 3000Mb")
+        button4 = telebot.types.InlineKeyboardButton(text="ночь 5000 Mb 👉7💲", callback_data="купить ночь 5000Mb")
+        button5 = telebot.types.InlineKeyboardButton(text="ночь 10000 Mb 👉10💲", callback_data="купить ночь 10000Mb")
+        button6 = telebot.types.InlineKeyboardButton(text="ночь 20000 Mb 👉15💲", callback_data="купить ночь 20000Mb")
+        button7 = telebot.types.InlineKeyboardButton(text="ночь 50000 Mb 👉20💲", callback_data="купить ночь 50000Mb")
         button8 = telebot.types.InlineKeyboardButton(text="ОСТАТОК НОЧНОГО ТРАФИКА", callback_data="ОСТАТОК НОЧНОГО ТРАФИКА")
 
         keyboard.add(button1)
