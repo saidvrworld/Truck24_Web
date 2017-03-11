@@ -25,12 +25,12 @@ class BotManager:
 
     paket_minut = {"120 минут👉$1,8":"*171*103*120*1*010100342*1#","180 минут👉$2,5":"*171*103*180*1*010100342*1#","300 минут👉$4,0":"*171*103*300*1*010100342*1#","ПРОВЕРИТЬ ОСТАТОК ПАКЕТА":"*103#"}
 
-    paket_sms = {"SMS 100👉$1":"*111*018*1#","SMS 300👉$2,4":"*111*018*2#","ПРОВЕРИТЬ ОСТАТОК CМС ПАКЕТА":"*111*018#",}
 
     uslugi_info = {"МОБИЛЬНЫЙ ИНТЕРНЕТ ВКЛЮЧЕНИЕ":"*111*0011#","МОБИЛНЫЙ ИНТЕРНЕТ ОТКЛЮЧЕНИЕ":"*111*0010#","МЕЖДУНАРОДНЫЕ ЗВОНКИ ВКЛЮЧИТЬ":"*111*0021#","МЕЖДУНАРОДНЫЕ ЗВОНКИ ОТКЛЮЧИТЬ":"*111*0020#",
                    "FAMILY включить":"*111*0031#","FAMILY отключить":"*111*0030#","ЗАПРЕТ РАССЫЛОК ВКЛЮЧИТЬ":"*111*0271#","ЗАПРЕТ РАССЫЛОК ОТКЛЮЧИТЬ":"*111*0271#","SUPER 0":"*166#"}
 
     settings_info = {"ПОЛУЧИТЬ НАСТРОЙКИ ИНТЕРНЕТ":"*111*021#","Запрет входящих звонков и SMS – включить":"*35*0000#","Запрет входящих звонков и SMS - отключить":"#35*0000#","Запрет исходящих звонков – включить":"*33*0000#","Запрет исходящих звонков – отключить":"#33*0000#"}
+
 
     bot = None
 
@@ -59,6 +59,8 @@ class BotManager:
                 self.ShowMainMenu(message)
             elif(call_data == "мой баланс"):
                 self.BalanceMenu(message)
+            elif (call_data == "пакеты"):
+                self.InternetPakets(message)
             elif(call_data=="интернет-пакеты"):
                 self.InternetPaketMenu(message)
             elif(call_data=="ночной интернет пакет"):
@@ -71,8 +73,7 @@ class BotManager:
                 self.Tarif(message)
             elif (call_data == "пакеты минут"):
                 self.PaketMinut(message)
-            elif (call_data == "смс пакеты"):
-                self.SMSPaket(message)
+
             elif (call_data == "услуги"):
                 self.Uslugi(message)
             elif (call_data == "настройки"):
@@ -128,34 +129,41 @@ class BotManager:
 
         keyboard = telebot.types.InlineKeyboardMarkup()
         button1 = telebot.types.InlineKeyboardButton(text="МОЙ БАЛАНС", callback_data="мой баланс")
-        button2 = telebot.types.InlineKeyboardButton(text="ИНТЕРНЕТ-ПАКЕТЫ", callback_data="интернет-пакеты")
-        button3 = telebot.types.InlineKeyboardButton(text="НОЧНОЙ ИНТЕРНЕТ ПАКЕТ", callback_data="ночной интернет пакет")
+        button3 = telebot.types.InlineKeyboardButton(text="ИНТЕРНЕТ ПАКЕТЫ", callback_data="пакеты")
         button4 = telebot.types.InlineKeyboardButton(text="НОЧНОЙ DRIVE", callback_data="ночной drive")
-        button5 = telebot.types.InlineKeyboardButton(text="МИНИ ИНТЕРНЕТ ПАКЕТЫ", callback_data="мини интернет пакеты")
         button6 = telebot.types.InlineKeyboardButton(text="ТАРИФЫ", callback_data="тарифы")
         button7 = telebot.types.InlineKeyboardButton(text="ОПЦИЯ 'Пакеты Минут!'", callback_data="пакеты минут")
-        button8 = telebot.types.InlineKeyboardButton(text="СМС Пакеты", callback_data="смс пакеты")
         button9 = telebot.types.InlineKeyboardButton(text="УСЛУГИ", callback_data="услуги")
         button10 = telebot.types.InlineKeyboardButton(text="НАСТРОЙКИ", callback_data="настройки")
 
 
-
-
-
         keyboard.add(button1)
-        keyboard.add(button2)
         keyboard.add(button3)
         keyboard.add(button4)
-        keyboard.add(button5)
         keyboard.add(button6)
         keyboard.add(button7)
-        keyboard.add(button8)
         keyboard.add(button9)
         keyboard.add(button10)
 
 
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Главное Меню\n\n\n",reply_markup=keyboard)
+
+    def InternetPakets(self,message):
+        current_chat_id = message["chat"]["id"]
+        message_id = message["message_id"]
+
+        keyboard = telebot.types.InlineKeyboardMarkup()
+        button2 = telebot.types.InlineKeyboardButton(text="ИНТЕРНЕТ-ПАКЕТЫ", callback_data="интернет-пакеты")
+        button3 = telebot.types.InlineKeyboardButton(text="НОЧНОЙ ИНТЕРНЕТ ПАКЕТ", callback_data="ночной интернет пакет")
+        button5 = telebot.types.InlineKeyboardButton(text="МИНИ ИНТЕРНЕТ ПАКЕТЫ", callback_data="мини интернет пакеты")
+
+        keyboard.add(button2)
+        keyboard.add(button3)
+        keyboard.add(button5)
+
+
+        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Выберите тип пакета\n\n\n",reply_markup=keyboard)
 
 
     def BalanceMenu(self,message):
@@ -318,24 +326,6 @@ class BotManager:
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="'Пакет 120 минут', 'Пакет 180 минут' и 'Пакет 300 минут' исходящих вызовов внутри сети, на номера других мобильных операторов и на городские номера по очень выгодной цене.\nМинуты по Узбекистану на все компании. Срок действия пакета - 30 календарных дней с момента активации\n\n",reply_markup=keyboard)
 
 
-    def SMSPaket(self,message):
-        current_chat_id = message["chat"]["id"]
-        message_id = message["message_id"]
-
-
-        keyboard = telebot.types.InlineKeyboardMarkup()
-        button1 = telebot.types.InlineKeyboardButton(text="SMS 100👉$1", callback_data="SMS 100👉$1")
-        button2 = telebot.types.InlineKeyboardButton(text="SMS 300👉$2,4", callback_data="SMS 300👉$2,4")
-        button3 = telebot.types.InlineKeyboardButton(text="ПРОВЕРИТЬ ОСТАТОК CМС ПАКЕТА", callback_data="ПРОВЕРИТЬ ОСТАТОК CМС ПАКЕТА")
-
-
-        keyboard.add(button1)
-        keyboard.add(button2)
-        keyboard.add(button3)
-
-        sms_info = "Услуга «SMS-пакеты» позволяет абонентам подключать на свои номера пакеты SMS-сообщений по выгодным ценам. «SMS-пакеты» включают в себя различное количество SMS-сообщений, которое можно использовать для отправки сообщений абонентам компаний мобильной связи Узбекистана."
-
-        self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="\n"+sms_info+"\nСтоимость пакета снимается при активации.\nСрок действия пакета - 30 календарных дней с момента активации",reply_markup=keyboard)
 
     def Uslugi(self, message):
         current_chat_id = message["chat"]["id"]
@@ -403,9 +393,9 @@ class BotManager:
             current_chat_id = call["message"]["chat"]["id"]
             call_data = call["data"]
             self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
-                                       text="код для выполнения действия\n👉"+call_data+"\n👉"+dict[call_data]+"\n")
+                                       text=call_data+"что бы выполненить действие\nскопируйте этот код в набор номера\n👇👇👇👇👇👇")
             self.bot.send_message(chat_id=current_chat_id,text=dict[call_data])
-            self.bot.send_contact(current_chat_id, dict[call_data], call_data)
+            #self.bot.send_contact(current_chat_id, dict[call_data], call_data)
 
 
 
