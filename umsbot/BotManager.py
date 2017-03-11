@@ -78,7 +78,9 @@ class BotManager:
                 self.Uslugi(message)
             elif (call_data == "настройки"):
                 self.Uslugi(message)
-
+            elif (call_data == "инструкция"):
+                self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
+                                           text="\nдля активации услуг,скопируте коды услуг,долгим нажатием на сообщение с кодом, затем вставте скопированый код в набор номера на вашем телефоне\n для просмотра видео инструкции перейдите на наш канал  https://telegram.me/ums1_uz \n или наш сайт http://ums1.uz/")
             elif(call_data in self.internet_paket.keys()):
                 self.SendContact(call,self.internet_paket)
 
@@ -133,7 +135,7 @@ class BotManager:
         button7 = telebot.types.InlineKeyboardButton(text="ОПЦИЯ 'Пакеты Минут!'", callback_data="пакеты минут")
         button9 = telebot.types.InlineKeyboardButton(text="УСЛУГИ", callback_data="услуги")
         button10 = telebot.types.InlineKeyboardButton(text="НАСТРОЙКИ", callback_data="настройки")
-
+        button11 = telebot.types.InlineKeyboardButton(text="ИНСТРУКЦИЯ", callback_data="инструкция")
 
         keyboard.add(button1)
         keyboard.add(button3)
@@ -142,8 +144,7 @@ class BotManager:
         keyboard.add(button7)
         keyboard.add(button9)
         keyboard.add(button10)
-
-
+        keyboard.add(button11)
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Главное Меню\n\n\n",reply_markup=keyboard)
 
@@ -391,7 +392,7 @@ class BotManager:
             current_chat_id = call["message"]["chat"]["id"]
             call_data = call["data"]
             self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id,
-                                       text=call_data+"что бы выполненить действие\nскопируйте этот код в набор номера\n👇👇👇👇👇👇")
+                                       text=call_data+"\nчто бы выполнить действие\nскопируйте этот код в набор номера\n👇👇👇👇👇👇")
             self.bot.send_message(chat_id=current_chat_id,text=dict[call_data])
             #self.bot.send_contact(current_chat_id, dict[call_data], call_data)
 
