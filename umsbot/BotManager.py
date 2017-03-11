@@ -100,8 +100,6 @@ class BotManager:
             elif (call_data in self.paket_minut.keys()):
                 self.SendContact(call, self.paket_minut)
 
-            elif (call_data in self.paket_sms.keys()):
-                self.SendContact(call, self.paket_sms)
 
             elif (call_data in self.uslugi_info.keys()):
                 self.SendContact(call, self.uslugi_info)
