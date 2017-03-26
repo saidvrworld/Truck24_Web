@@ -93,7 +93,7 @@ class BotManager:
     def sendImage(self,message):
         current_chat_id = message["chat"]["id"]
         import json
-        file_path = os.path.join(settings.STATIC_ROOT, )
+        file_path = os.path.join(settings.STATIC_ROOT, "1.jpg")
         file = open(file_path, "rb")
         print(self.bot.send_photo(current_chat_id, file))
 
