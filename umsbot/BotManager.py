@@ -38,7 +38,7 @@ class BotManager:
                 self.ShowMainMenu(message)
             elif call_data == "сумки":
                 self.BagsMenu(message)
-            elif call_data == "Женская сумка":
+            elif call_data in ["Женская сумка","Мужской рюгзак","чемодан"]:
                 self.sendInfo(message)
             else:
                 self.bot.send_message(current_chat_id, "Эта кнопка пока не работает)\nШирин нужно добавить описание товаров")
@@ -92,19 +92,11 @@ class BotManager:
 
     def sendImage(self,message):
         current_chat_id = message["chat"]["id"]
-        import json
-        file_path = os.path.join(settings.STATIC_ROOT, "1.jpg")
-        file = open(file_path, "rb")
-        print(self.bot.send_photo(current_chat_id, file))
+        for i in ["1.jpg","2.jpg"]:
+            file_path = os.path.join(settings.STATIC_ROOT, i)
+            file = open(file_path, "rb")
+            self.bot.send_photo(current_chat_id, file)
 
-        jsonFile= "{'photo': [<telebot.types.PhotoSize object at 0x7fe9fb9787f0>, <telebot.types.PhotoSize object at 0x7fea0bcba240>, <telebot.types.PhotoSize object at 0x7fe9fba81128>, <telebot.types.PhotoSize object at 0x7fe9fb715320>]}"
-        list = json.loads(jsonFile)
-
-        for file1 in list["photo"]:
-
-            self.bot.send_message(current_chat_id,file1.file_id)
-
-            self.bot.send_photo(current_chat_id, file1.file_id)
 
 
 
