@@ -88,5 +88,6 @@ class BotManager:
         message_id = message["message_id"]
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Очень вместительная сумка в нее помещаются все учебники, даже калкулус\n ")
         file_path = os.path.join(settings.STATIC_ROOT, 'test.png')
-        self.bot.send_photo(current_chat_id,file_path)
+        file = open(file_path,"rb")
+        self.bot.send_photo(current_chat_id,file)
 
