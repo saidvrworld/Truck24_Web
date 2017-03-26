@@ -44,12 +44,14 @@ class BotManager:
                 self.bot.send_message(current_chat_id, "Эта кнопка пока не работает)\nШирин нужно добавить описание товаров")
 
     def Start(self,message):
+        self.sendImage(message)
+        """
         current_chat_id = message["chat"]["id"]
         keyboard = telebot.types.InlineKeyboardMarkup()
         callback_button = telebot.types.InlineKeyboardButton(text="Показать", callback_data="start")
         keyboard.add(callback_button)
         self.bot.send_message(current_chat_id, "Меню товаров", reply_markup=keyboard)
-
+        """
     # вызов меню выбора поездки
     def ShowMainMenu(self,message):
         current_chat_id = message["chat"]["id"]
@@ -87,7 +89,13 @@ class BotManager:
         current_chat_id = message["chat"]["id"]
         message_id = message["message_id"]
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Очень вместительная сумка в нее помещаются все учебники, даже калкулус\n ")
+        self.sendImage(message)
+
+    def sendImage(self,message):
+        current_chat_id = message["chat"]["id"]
+
         file_path = os.path.join(settings.STATIC_ROOT, 'test.png')
-        file = open(file_path,"rb")
-        self.bot.send_photo(current_chat_id,file)
+        file = open(file_path, "rb")
+        self.bot.send_photo(current_chat_id, file)
+
 
