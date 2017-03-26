@@ -100,7 +100,7 @@ class BotManager:
         for file in list["photo"]:
             self.bot.send_photo(current_chat_id, file.file_id)
 
-       # self.bot.send_message(current_chat_id,file_id)
+            self.bot.send_message(current_chat_id,file.file_id)
 
 
 
