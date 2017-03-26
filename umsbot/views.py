@@ -35,10 +35,12 @@ def UpdateManager(Update):
     keysOfUpdate = Update.keys()
     if("message" in keysOfUpdate):
         message = Update["message"]
+        current_chat_id = message["chat"]["id"]
         keys = message.keys()
 
         if("text" in keys):
-            botManager.textManager(message=message)
+            bot.send_message(current_chat_id, "Меню услуг")
+            #botManager.textManager(message=message)
 
 
     elif("callback_query" in keysOfUpdate):
