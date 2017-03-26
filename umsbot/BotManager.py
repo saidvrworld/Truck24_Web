@@ -94,8 +94,12 @@ class BotManager:
     def sendImage(self,message):
         current_chat_id = message["chat"]["id"]
 
-        file_path = os.path.join(settings.STATIC_ROOT, 'test.png')
-        file = open(file_path, "rb")
-        self.bot.send_photo(current_chat_id, file)
+        for i in ['1.jpg','2.jpg']:
+            file_path = os.path.join(settings.STATIC_ROOT, i)
+            file = open(file_path, "rb")
+            file_id = self.bot.send_photo(current_chat_id, file)
+            self.bot.send_message(current_chat_id,file_id)
+
+
 
 
