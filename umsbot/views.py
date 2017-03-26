@@ -8,7 +8,7 @@ import json
 
 
 
-token = "359231813:AAGTeb93BP9Gg-SDGPzpUAcvQdAzjd_qUe0"
+token = "350774649:AAG5JYhMCZ2rCi7gh6OWILTru37fdPQrqhg"
 
 bot = telebot.TeleBot(token)
 botManager = BotManager(bot)
@@ -17,7 +17,7 @@ botManager = BotManager(bot)
 
 def webhook(request):
     bot.remove_webhook()
-    bot.set_webhook(url="https://umsdiller.herokuapp.com/umsbot/359231813:AAGTeb93BP9Gg-SDGPzpUAcvQdAzjd_qUe0/")
+    bot.set_webhook(url="https://umsdiller.herokuapp.com/umsbot/"+token+"/")
     return HttpResponse("ok")
 
 
