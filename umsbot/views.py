@@ -17,7 +17,7 @@ botManager = BotManager(bot)
 
 def webhook(request):
     bot.remove_webhook()
-    bot.set_webhook(url="https://umsdiller.herokuapp.com/umsbot/350774649:AAG5JYhMCZ2rCi7gh6OWILTru37fdPQrqhg/")
+    bot.set_webhook(url="https://umsdiller.herokuapp.com/umsbot/getupdate/")
     return HttpResponse("ok")
 
 
