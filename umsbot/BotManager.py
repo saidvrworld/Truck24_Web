@@ -93,14 +93,19 @@ class BotManager:
     def sendImage(self,message):
         current_chat_id = message["chat"]["id"]
         import json
-        #file_path = os.path.join(settings.STATIC_ROOT, )
-        #file = open(file_path, "rb")
+        file_path = os.path.join(settings.STATIC_ROOT, )
+        file = open(file_path, "rb")
+        print(self.bot.send_photo(current_chat_id, file))
+
         jsonFile= "{'photo': [<telebot.types.PhotoSize object at 0x7fe9fb9787f0>, <telebot.types.PhotoSize object at 0x7fea0bcba240>, <telebot.types.PhotoSize object at 0x7fe9fba81128>, <telebot.types.PhotoSize object at 0x7fe9fb715320>]}"
         list = json.loads(jsonFile)
-        for file in list["photo"]:
-            self.bot.send_photo(current_chat_id, file.file_id)
 
-            self.bot.send_message(current_chat_id,file.file_id)
+        for file1 in list["photo"]:
+
+            self.bot.send_message(current_chat_id,file1.file_id)
+
+            self.bot.send_photo(current_chat_id, file1.file_id)
+
 
 
 
