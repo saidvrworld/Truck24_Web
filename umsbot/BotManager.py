@@ -57,7 +57,7 @@ class BotManager:
         keyboard = telebot.types.InlineKeyboardMarkup()
         callback_button = telebot.types.InlineKeyboardButton(text="Показать", callback_data="start")
         keyboard.add(callback_button)
-        self.bot.send_message(current_chat_id, "Меню товаров", reply_markup=keyboard)
+        self.bot.send_message(current_chat_id, "Главная", reply_markup=keyboard)
 
     # вызов меню выбора поездки
     def ShowMainMenu(self,message):
@@ -65,10 +65,10 @@ class BotManager:
         message_id = message["message_id"]
 
         keyboard = telebot.types.InlineKeyboardMarkup()
-        button1 = telebot.types.InlineKeyboardButton(text="Галерея", callback_data="Галерея")
-        button3 = telebot.types.InlineKeyboardButton(text="Наш Гимн", callback_data="Наш Гимн")
-        button4 = telebot.types.InlineKeyboardButton(text="Магазин", callback_data="Магазин")
-        button5 = telebot.types.InlineKeyboardButton(text="Про нас", callback_data="Про нас")
+        button1 = telebot.types.InlineKeyboardButton(text="🖼Галерея", callback_data="Галерея")
+        button3 = telebot.types.InlineKeyboardButton(text="🎵Наш Гимн", callback_data="Наш Гимн")
+        button4 = telebot.types.InlineKeyboardButton(text="🛒Магазин", callback_data="Магазин")
+        button5 = telebot.types.InlineKeyboardButton(text="🏢Про нас", callback_data="Про нас")
 
 
         keyboard.add(button1)
@@ -84,9 +84,9 @@ class BotManager:
         message_id = message["message_id"]
 
         keyboard = telebot.types.InlineKeyboardMarkup()
-        button1 = telebot.types.InlineKeyboardButton(text="Сумки", callback_data="сумки")
-        button3 = telebot.types.InlineKeyboardButton(text="Одежда", callback_data="одежда")
-        button4 = telebot.types.InlineKeyboardButton(text="Акксесуары", callback_data="Акксесуары")
+        button1 = telebot.types.InlineKeyboardButton(text="🛍Сумки", callback_data="сумки")
+        button3 = telebot.types.InlineKeyboardButton(text="👕Одежда", callback_data="одежда")
+        button4 = telebot.types.InlineKeyboardButton(text="🔗Акксесуары", callback_data="Акксесуары")
 
         keyboard.add(button1)
         keyboard.add(button3)
