@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umsbot/static/IUT/inha_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umsbot/static/IUT/inha_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umsbot/static/IUT/inha_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umsbot/static/IUT/inha_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umsbot/static/IUT/inha_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umsbot/static/gimn_inha_by_shirin.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umsbot/BotManager.py" afterPath="$PROJECT_DIR$/umsbot/BotManager.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +23,8 @@
       <file leaf-file-name="BotManager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umsbot/BotManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="510">
+              <caret line="135" column="77" lean-forward="false" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
               <folding>
                 <element signature="e#44#58#0" expanded="true" />
               </folding>
@@ -842,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umsbot/BotManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        <state relative-caret-position="510">
+          <caret line="135" column="77" lean-forward="false" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
           <folding>
             <element signature="e#44#58#0" expanded="true" />
           </folding>

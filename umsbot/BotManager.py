@@ -133,7 +133,7 @@ class BotManager:
     def Gallery(self,message):
         current_chat_id = message["chat"]["id"]
         for i in range(1,6):
-            file_path = os.path.join(settings.STATIC_ROOT, "IUT/inha_"+i+".jpg")
+            file_path = os.path.join(settings.STATIC_ROOT, "IUT/inha_"+str(i)+".jpg")
             file = open(file_path, "rb")
             self.bot.send_photo(current_chat_id, file)
 
