@@ -46,6 +46,12 @@ class BotManager:
                 self.Gallery(message)
             elif call_data == "сумки":
                 self.BagsMenu(message)
+            elif call_data == "Акксесуары":
+                self.Access(message)
+            elif call_data == "одежда":
+                self.wear(message)
+            elif call_data == "ноут":
+                self.Nout(message)
             elif call_data in ["Женская сумка","Мужской рюгзак","чемодан"]:
                 self.sendInfo(message)
             else:
@@ -87,10 +93,16 @@ class BotManager:
         button1 = telebot.types.InlineKeyboardButton(text="🛍Сумки", callback_data="сумки")
         button3 = telebot.types.InlineKeyboardButton(text="👕Одежда", callback_data="одежда")
         button4 = telebot.types.InlineKeyboardButton(text="🔗Акксесуары", callback_data="Акксесуары")
+        button5 = telebot.types.InlineKeyboardButton(text="🔗Канцтовары", callback_data="Канцтовары")
+        button6 = telebot.types.InlineKeyboardButton(text="🖥Девайсы для ноутбука", callback_data="ноут")
 
         keyboard.add(button1)
         keyboard.add(button3)
         keyboard.add(button4)
+        keyboard.add(button5)
+        keyboard.add(button6)
+
+
 
         self.bot.edit_message_text(chat_id=current_chat_id, message_id=message_id, text="Главное Меню\n\n\n",reply_markup=keyboard)
 
@@ -143,7 +155,30 @@ class BotManager:
         file = open(file_path, "rb")
         self.bot.send_voice(current_chat_id, file)
 
+    def Nout(self,message):
+        current_chat_id = message["chat"]["id"]
+        for i in range(1,8):
+            file_path = os.path.join(settings.STATIC_ROOT, "nout/"+str(i)+".jpg")
+            file = open(file_path, "rb")
+            self.bot.send_photo(current_chat_id, file)
+
+        file_path = os.path.join(settings.STATIC_ROOT, "nout/8.png")
+        file = open(file_path, "rb")
+        self.bot.send_photo(current_chat_id, file)
+
+    def Access(self,message):
+        current_chat_id = message["chat"]["id"]
+        for i in range(1,9):
+            file_path = os.path.join(settings.STATIC_ROOT, "access/"+str(i)+".jpg")
+            file = open(file_path, "rb")
+            self.bot.send_photo(current_chat_id, file)
 
 
+    def wear(self,message):
+        current_chat_id = message["chat"]["id"]
+        for i in range(1,7):
+            file_path = os.path.join(settings.STATIC_ROOT, "wear/"+str(i)+".jpg")
+            file = open(file_path, "rb")
+            self.bot.send_photo(current_chat_id, file)
 
 
