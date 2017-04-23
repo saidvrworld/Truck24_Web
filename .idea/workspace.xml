@@ -1,7 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="" />
+    <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/css/icons.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/img/Track24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/img/ava-c.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/img/ava.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/img/carrier.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/img/client.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/css/icon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/css/material.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/img/app-store.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/img/play-market.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/js/material.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/js/mdl-selectfield.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/Mockup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/carrier-auth.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/carrier-profile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/carrier-sign-up.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/carrier.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-auth.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-more-map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-more-offers-about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-more-offers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-more.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-sign-up.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-story-about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client-story.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/client.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/driver-order-info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/BotManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/migrations/0002_car_driver_number.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/migrations/0003_delete_question.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/migrations/0004_auto_20170304_2121.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/IUT/inha_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/IUT/inha_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/IUT/inha_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/IUT/inha_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/IUT/inha_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/access/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/access/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/access/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/access/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/access/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/access/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/access/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/access/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/gimn_inha_by_shirin.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/nout/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/nout/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/nout/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/nout/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/nout/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/nout/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/nout/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/nout/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/wear/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/wear/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/wear/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/wear/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/wear/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/static/wear/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umsbot/views.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/umsbot/__init__.py" afterPath="$PROJECT_DIR$/track24/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/umsbot/admin.py" afterPath="$PROJECT_DIR$/track24/admin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/umsbot/apps.py" afterPath="$PROJECT_DIR$/track24/apps.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/umsbot/models.py" afterPath="$PROJECT_DIR$/track24/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/umsbot/tests.py" afterPath="$PROJECT_DIR$/track24/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMS_1/settings.py" afterPath="$PROJECT_DIR$/UMS_1/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMS_1/urls.py" afterPath="$PROJECT_DIR$/UMS_1/urls.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,112 +100,106 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BotManager.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/umsbot/BotManager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="80" column="29" lean-forward="true" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-              <folding>
-                <element signature="e#44#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umsbot/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMS_1/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umsbot/views.py">
+        <entry file="file://$PROJECT_DIR$/track24/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
-                <element signature="e#44#93#0" expanded="true" />
+                <element signature="e#43#75#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMS_1/urls.py">
+      <file leaf-file-name="client-sign-up.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/client-sign-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="73" column="58" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMS_1/wsgi.py">
+      <file leaf-file-name="client.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/track24/templates/client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="480">
+              <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carrier-profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/carrier-profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umsbot/urls.py">
+        <entry file="file://$PROJECT_DIR$/track24/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="225">
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client-add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="681">
+              <caret line="161" column="52" lean-forward="false" selection-start-line="161" selection-start-column="52" selection-end-line="161" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carrier-sign-up.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/carrier-sign-up.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="139" column="75" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client-story-about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/client-story-about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="103" lean-forward="false" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mockup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/Mockup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="681">
+              <caret line="83" column="52" lean-forward="false" selection-start-line="82" selection-start-column="3" selection-end-line="83" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/gettingstarted/urls.py" />
         <option value="$PROJECT_DIR$/gettingstarted/settings.py" />
         <option value="$PROJECT_DIR$/Taxi_Favorit/wsgi.py" />
@@ -163,16 +238,39 @@
         <option value="$PROJECT_DIR$/taxibot/BotManager.py" />
         <option value="$PROJECT_DIR$/taxibot/views.py" />
         <option value="$PROJECT_DIR$/taxibot/admin.py" />
-        <option value="$PROJECT_DIR$/UMS_1/urls.py" />
         <option value="$PROJECT_DIR$/UMS_1/wsgi.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/umsbot/apps.py" />
-        <option value="$PROJECT_DIR$/UMS_1/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/umsbot/BotManager.py" />
+        <option value="$PROJECT_DIR$/umsbot/static/carrier-auth.html" />
+        <option value="$PROJECT_DIR$/umsbot/static/index.html" />
         <option value="$PROJECT_DIR$/umsbot/urls.py" />
         <option value="$PROJECT_DIR$/umsbot/views.py" />
-        <option value="$PROJECT_DIR$/umsbot/BotManager.py" />
+        <option value="$PROJECT_DIR$/umsbot/template/index.html" />
+        <option value="$PROJECT_DIR$/UMS_1/urls.py" />
+        <option value="$PROJECT_DIR$/track24/template/index.html" />
+        <option value="$PROJECT_DIR$/track24/template/client-auth.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client-auth.html" />
+        <option value="$PROJECT_DIR$/track24/templates/index.html" />
+        <option value="$PROJECT_DIR$/track24/templates/carrier-auth.html" />
+        <option value="$PROJECT_DIR$/UMS_1/settings.py" />
+        <option value="$PROJECT_DIR$/track24/templates/carrier.html" />
+        <option value="$PROJECT_DIR$/track24/templates/Mockup.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client-story.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client-story-about.html" />
+        <option value="$PROJECT_DIR$/track24/templates/carrier-profile.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client-more.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client-more-offers.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client-more-offers-about.html" />
+        <option value="$PROJECT_DIR$/track24/templates/driver-order-info.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client-sign-up.html" />
+        <option value="$PROJECT_DIR$/track24/templates/carrier-sign-up.html" />
+        <option value="$PROJECT_DIR$/track24/views.py" />
+        <option value="$PROJECT_DIR$/track24/templates/client-add.html" />
+        <option value="$PROJECT_DIR$/track24/urls.py" />
+        <option value="$PROJECT_DIR$/track24/templates/client.html" />
       </list>
     </option>
   </component>
@@ -201,58 +299,75 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ums1" />
+              <option name="myItemId" value="Track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ums1" />
+              <option name="myItemId" value="Track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ums1" />
+              <option name="myItemId" value="Track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ums1" />
+              <option name="myItemId" value="Track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="umsbot" />
+              <option name="myItemId" value="track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ums1" />
+              <option name="myItemId" value="Track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ums1" />
+              <option name="myItemId" value="Track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="umsbot" />
+              <option name="myItemId" value="track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ums1" />
+              <option name="myItemId" value="Track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ums1" />
+              <option name="myItemId" value="Track24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Track24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Track24" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -263,6 +378,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,11 +398,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/track24/templates" />
+      <recent name="$PROJECT_DIR$/umsbot/static" />
       <recent name="$PROJECT_DIR$/umsbot/static/wear" />
       <recent name="$PROJECT_DIR$/umsbot/static/access" />
       <recent name="$PROJECT_DIR$/umsbot/static/nout" />
-      <recent name="$PROJECT_DIR$/umsbot/static" />
-      <recent name="$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/umsbot/template" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.python-getting-started">
@@ -568,13 +687,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -586,7 +706,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -602,56 +721,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taxibot/admin.py" />
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxibot/static/js/material.min.js" />
-    <entry file="file://$PROJECT_DIR$/templates/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gettingstarted/wsgi.py" />
-    <entry file="file://$PROJECT_DIR$/gettingstarted/urls.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/psycopg2-2.6.2/doc/src/tools/lib/sql_role.py" />
-    <entry file="file://$PROJECT_DIR$/gettingstarted/settings.py" />
-    <entry file="file://$PROJECT_DIR$/Taxi_Favorit/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/taxibot/apps.py" />
-    <entry file="file://$PROJECT_DIR$/Taxi_Favorit/wsgi.py" />
-    <entry file="file://$PROJECT_DIR$/app.py" />
-    <entry file="file://$PROJECT_DIR$/taxibot/ManagerInterface.py" />
-    <entry file="file://$PROJECT_DIR$/taxibot/templates/fullpage-de5c59fc8cc3ffdede90c89f012d90d76287ab67fbf6c7898f73f48065b48747.css" />
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxibot/LocalBotTest.py" />
-    <entry file="file://$PROJECT_DIR$/taxibot/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/taxibot/templates/waiting_calls.html" />
     <entry file="file://$PROJECT_DIR$/taxibot/templates/Test.html" />
     <entry file="file://$PROJECT_DIR$/taxibot/static/css/main.css" />
     <entry file="file://$PROJECT_DIR$/taxibot/templates/accepted.html" />
@@ -699,49 +768,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/__init__.py">
+    <entry file="file://$PROJECT_DIR$/track24/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/apps.py">
+    <entry file="file://$PROJECT_DIR$/track24/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/BotManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="80" column="29" lean-forward="true" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-          <folding>
-            <element signature="e#44#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/umsbot/BotManager.py" />
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,59 +805,236 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/models.py">
+    <entry file="file://$PROJECT_DIR$/UMS_1/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UMS_1/settings.py">
+    <entry file="file://$PROJECT_DIR$/track24/template/carrier-auth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="1680">
+          <caret line="112" column="17" lean-forward="false" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/views.py">
+    <entry file="file://$PROJECT_DIR$/track24/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#44#93#0" expanded="true" />
+            <element signature="e#24#63#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="103" lean-forward="false" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/template/client-auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UMS_1/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UMS_1/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/UMS_1/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="1833">
+          <caret line="146" column="30" lean-forward="false" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
+          <folding>
+            <element signature="e#333#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-story.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umsbot/urls.py">
+    <entry file="file://$PROJECT_DIR$/track24/templates/carrier.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="1725">
+          <caret line="115" column="91" lean-forward="false" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/carrier-auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="103" lean-forward="false" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="78" lean-forward="false" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-more.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="101" lean-forward="false" selection-start-line="24" selection-start-column="101" selection-end-line="24" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-more-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-more-offers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="33" column="78" lean-forward="false" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-more-offers-about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="33" column="78" lean-forward="false" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/driver-order-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="78" lean-forward="false" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/Mockup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="83" column="52" lean-forward="false" selection-start-line="82" selection-start-column="3" selection-end-line="83" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/carrier-profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-story-about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="103" lean-forward="false" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-sign-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="73" column="58" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/carrier-sign-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="139" column="75" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="161" column="52" lean-forward="false" selection-start-line="161" selection-start-column="52" selection-end-line="161" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

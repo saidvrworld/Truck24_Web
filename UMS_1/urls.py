@@ -7,7 +7,7 @@ admin.autodiscover()
 # url(r'^$', 'gettingstarted.views.home', name='home'),
 # url(r'^blog/', include('blog.urls')),
 
-urlpatterns = [url(r'^umsbot/',include('umsbot.urls',namespace='umsbot')),
+urlpatterns = [url(r'^track24/', include('track24.urls', namespace='track24')),
     url(r'^admin/', admin.site.urls),
                ]
 
