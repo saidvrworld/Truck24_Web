@@ -23,8 +23,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track24/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="108" column="147" lean-forward="false" selection-start-line="108" selection-start-column="147" selection-end-line="108" selection-end-column="147" />
+            <state relative-caret-position="554">
+              <caret line="108" column="56" lean-forward="false" selection-start-line="108" selection-start-column="56" selection-end-line="108" selection-end-column="56" />
               <folding>
                 <element signature="e#43#75#0" expanded="true" />
               </folding>
@@ -950,8 +950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/track24/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="108" column="147" lean-forward="false" selection-start-line="108" selection-start-column="147" selection-end-line="108" selection-end-column="147" />
+        <state relative-caret-position="554">
+          <caret line="108" column="56" lean-forward="false" selection-start-line="108" selection-start-column="56" selection-end-line="108" selection-end-column="56" />
           <folding>
             <element signature="e#43#75#0" expanded="true" />
           </folding>
