@@ -108,7 +108,7 @@ def AddOrder(request):
     date = "16.05.2017"
     postData = {"token":token,"carTypeId":str(carTypeId),"lat_from":str(lat_from),"long_from":str(long_from),"lat_to":str(lat_to),"long_to":str(long_to),"notes":notes,"date":date}
 
-    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
+    dataBody = MakeRequest(urlPath=url,post_data=postData)
     success = dataBody["success"]
     if(success):
         return CustomerOrders(request)
