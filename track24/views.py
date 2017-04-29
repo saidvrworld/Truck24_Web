@@ -45,8 +45,33 @@ def logInCustomer(request):
 
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     token = dataBody["token"]
+    request.session["customer_token"] = token
+
+    return render(request, "client-auth-sms.html")
+
+
+def ClientSmsVerification(request):
+    token = None
+    try:
+        sms_code = request.POST["sms_code"]
+        token = request.session["customer_token"]
+    except:
+        return render(request, "client-auth.html")
+
+
+    postData = {'smsResponse': sms_code,"token":token}
+    url = 'http://track24.beetechno.uz/api/'
+    if(len(sms_code) != 5 ):
+         return render(request, "SmsError.html")
+
+    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
+    token = dataBody["token"]
     registered = dataBody["registered"]
     request.session["customer_token"] = token
+    success = dataBody["success"]
+
+    if(not success):
+        return render(request, "SmsError.html")
 
     if(registered):
         return CustomerOrders(request)
@@ -111,33 +136,58 @@ def AddOrder(request):
     postData = {"token":token,"carTypeId":str(carTypeId),"lat_from":str(lat_from),"long_from":str(long_from),"lat_to":str(lat_to),"long_to":str(long_to),"notes":notes,"date":date}
 
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-    success = dataBody["success"]
-    if(success):
-        return CustomerOrders(request)
-    else:
-        return render(request, "Mockup.html")
+    return CustomerOrders(request)
+
 
 def logInDriver(request):
     phone_number = request.POST["phone_number"]
 
     postData = {'phoneNumber': phone_number,"userType":"2"}
     url = 'http://track24.beetechno.uz/api/'
+    if (len(phone_number) != 13):
+        return render(request, "NumberError.html")
+
+    dataBody = MakeRequest(urlPath=url, post_data=postData)[0]
+    token = dataBody["token"]
+    request.session["driver_token"] = token
+
+    return render(request, "carrier-auth-sms.html")
+
+
+def DriverSmsVerification(request):
+    token = None
+    try:
+        sms_code = request.POST["sms_code"]
+        token = request.session["driver_token"]
+    except:
+        return render(request, "carrier-auth.html")
+
+
+    postData = {'smsResponse': sms_code,"token":token}
+    url = 'http://track24.beetechno.uz/api/'
+    if(len(sms_code) != 5 ):
+         return render(request, "SmsError.html")
 
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     token = dataBody["token"]
     registered = dataBody["registered"]
     request.session["driver_token"] = token
+    success = dataBody["success"]
+
+    if(not success):
+        return render(request, "SmsError.html")
+
     if(registered):
         return DriverOrders(request)
+
     else:
         return render(request, "carrier-sign-up.html")
-
 
 def signInDriver(request):
 
     url = "http://track24.beetechno.uz/api/"
     name = request.POST["userName"]
-    token = request.session["customer_token"]
+    token = request.session["driver_token"]
     maxWeight = request.POST["maxWeight"]
     carNumber = request.POST["carNumber"]
     detail = request.POST["detail"]
@@ -189,12 +239,7 @@ def FinishOrderDriver(request):
     url = 'http://track24.beetechno.uz/api/customer/closeOrder/'
 
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-    success = dataBody["success"]
-    print(success)
-    if(success):
-        return DriverOrders(request)
-    else:
-        return render(request, "Mockup.html")
+    return DriverOrders(request)
 
 
 def OffersList(request):
@@ -215,6 +260,20 @@ def OfferInfo(request):
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     return render(request, "client-more-offers-about.html",{"offer":dataBody})
 
+def OfferPrice(request):
+
+    try:
+        userId = request.session["driver_token"]
+    except:
+        return render(request, "carrier-auth.html")
+
+    price = request.POST["price"]
+    orderId = request.POST["orderId"]
+    order_token = "86b9eba37d8284a4"+orderId+"ad0447ce737d8885"
+    postData = {'token': order_token,"userId":userId,"price":price}
+    url = 'http://track24.beetechno.uz/api/driver/makeOffer/'
+    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
+    return DriverOrders(request)
 
 def AcceptOffer(request):
 
@@ -223,10 +282,7 @@ def AcceptOffer(request):
     postData = {'token': offer_token}
     url = 'http://track24.beetechno.uz/api/customer/acceptOffer/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-    if(dataBody["success"]):
-         return CustomerOrders(request)
-    else:
-        return render(request, "Mockup.html")
+    return CustomerOrders(request)
 
 
 def MakeRequest(urlPath,post_data):

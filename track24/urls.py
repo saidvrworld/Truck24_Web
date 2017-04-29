@@ -10,6 +10,9 @@ urlpatterns = [
     url(r'^client-logIn/$', views.logInCustomer, name='logInCustomer'),
     url(r'^driver-logIn/$', views.logInDriver, name='logInDriver'),
 
+    url(r'^client-sms/$', views.ClientSmsVerification, name='clientSmsVerification'),
+    url(r'^driver-sms/$', views.DriverSmsVerification, name='driverSmsVerification'),
+
     url(r'^client-signIn/$', views.signInCustomer, name='signInCustomer'),
     url(r'^driver-signIn/$', views.signInDriver, name='signInDriver'),
 
@@ -23,5 +26,6 @@ urlpatterns = [
     url(r'^client-offers-list/$', views.OffersList, name='OffersList'),
     url(r'^client-offer-info/$', views.OfferInfo, name='OfferInfo'),
     url(r'^client-offer-accept/$', views.AcceptOffer, name='AcceptOffer'),
+    url(r'^driver-offer-price/$', views.OfferPrice, name='OfferPrice'),
 
 ]
