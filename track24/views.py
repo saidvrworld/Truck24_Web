@@ -118,6 +118,15 @@ def OrderDetailsForCustomer(request):
 
     return render(request, "client-more.html",dataBody)
 
+def AcceptedOrderDetailsForCustomer(request):
+    order_id = request.POST["order_id"]
+    token = "86b9eba37d8284a4"+order_id+"ad0447ce737d8885"
+    postData = {'token': token}
+    url = 'http://track24.beetechno.uz/api/customer/acceptedOrderInfo/'
+    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
+
+    return render(request, "client-accepted-order-info.html",{"order":dataBody})
+
 
 def GoToAddOrder(request):
     return render(request, "client-add.html")
