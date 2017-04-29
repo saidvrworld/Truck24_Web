@@ -148,6 +148,18 @@ def AddOrder(request):
     return CustomerOrders(request)
 
 
+def FinishOrderCustomer(request):
+
+    order_id = request.POST["order_id"]
+    customer_token = request.session["customer_token"]
+    order_token = "86b9eba37d8284a4"+order_id+"ad0447ce737d8885"
+    postData = {'token': order_token,"userToken":customer_token}
+    url = 'http://track24.beetechno.uz/api/customer/closeOrder/'
+
+    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
+    return CustomerOrders(request)
+
+
 def logInDriver(request):
     phone_number = request.POST["phone_number"]
 
@@ -245,7 +257,7 @@ def FinishOrderDriver(request):
     driver_token = request.session["driver_token"]
     order_token = "86b9eba37d8284a4"+order_id+"ad0447ce737d8885"
     postData = {'token': order_token,"userToken":driver_token}
-    url = 'http://track24.beetechno.uz/api/customer/closeOrder/'
+    url = 'http://track24.beetechno.uz/api/driver/closeOrder/'
 
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     return DriverOrders(request)
