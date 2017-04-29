@@ -20,6 +20,8 @@ urlpatterns = [
     url(r'^client-add-order/$', views.AddOrder, name='AddOrder'),
 
     url(r'^client-order-details/$', views.OrderDetailsForCustomer, name='OrderDetailsForCustomer'),
+    url(r'^client-accepted-order-details/$', views.AcceptedOrderDetailsForCustomer, name='AcceptedOrderDetailsForCustomer'),
+
     url(r'^driver-order-details/$', views.OrderDetailsForDriver, name='OrderDetailsForDriver'),
 
     url(r'^driver-finish-order/$', views.FinishOrderDriver, name='FinishOrderDriver'),
