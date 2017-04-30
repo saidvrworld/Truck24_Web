@@ -315,6 +315,9 @@ def OfferPrice(request):
         return render(request, "carrier-auth.html")
 
     price = request.POST["price"]
+    if(len(price) == 0):
+        return render(request, "PriceError.html")
+
     orderId = request.POST["orderId"]
     order_token = "86b9eba37d8284a4"+orderId+"ad0447ce737d8885"
     postData = {'token': order_token,"userId":userId,"price":price}
@@ -328,6 +331,7 @@ def driverSettings(request):
     postData = {'token': my_token}
     url = 'http://track24.beetechno.uz/api/customer/getNearInfo/'
     dataBody = MakeRequest(urlPath=url, post_data=postData)[0]
+    print(dataBody)
     return render(request, "carrier-profile.html", {"driver": dataBody})
 
 
