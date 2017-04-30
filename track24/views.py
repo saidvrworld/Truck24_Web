@@ -19,7 +19,6 @@ def main(request):
 ########################################################################################################################
 
 def ChooseCustomer(request):
-    return render(request, "client-auth.html")
     try:
          if(request.session["customer_token"]):
               return CustomerOrders(request)
@@ -30,7 +29,6 @@ def ChooseCustomer(request):
 
 
 def ChooseDriver(request):
-    return render(request, "carrier-auth.html")
     try:
          if(request.session["driver_token"]):
               return DriverOrders(request)
