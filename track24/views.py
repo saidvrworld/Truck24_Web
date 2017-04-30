@@ -119,8 +119,10 @@ def OrderDetailsForCustomer(request):
     postData = {'token': token}
     url = 'http://track24.beetechno.uz/api/customer/getOrderInfo/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-    getAddress(dataBody["from_lat"],dataBody["from_long"])
-    return render(request, "client-more.html",dataBody)
+    from_address = getAddress(dataBody["from_lat"],dataBody["from_long"])
+    to_address = getAddress(dataBody["to_lat"],dataBody["to_long"])
+
+    return render(request, "client-more.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
 
 def AcceptedOrderDetailsForCustomer(request):
     order_id = request.POST["order_id"]
