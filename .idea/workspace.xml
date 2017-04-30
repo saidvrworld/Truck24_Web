@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-add.html" afterPath="$PROJECT_DIR$/track24/templates/client-add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/views.py" afterPath="$PROJECT_DIR$/track24/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,9 +37,11 @@
       <file leaf-file-name="client-add.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
-              <caret line="170" column="23" lean-forward="true" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
+            <state relative-caret-position="685">
+              <caret line="149" column="83" lean-forward="false" selection-start-line="149" selection-start-column="83" selection-end-line="149" selection-end-column="83" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
@@ -61,8 +64,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="176" column="30" lean-forward="false" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
+            <state relative-caret-position="813">
+              <caret line="149" column="33" lean-forward="true" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
               <folding>
                 <element signature="e#43#75#0" expanded="true" />
               </folding>
@@ -192,10 +195,10 @@
         <option value="$PROJECT_DIR$/track24/templates/NumberError.html" />
         <option value="$PROJECT_DIR$/track24/templates/PriceError.html" />
         <option value="$PROJECT_DIR$/track24/templates/carrier.html" />
-        <option value="$PROJECT_DIR$/track24/views.py" />
         <option value="$PROJECT_DIR$/track24/templates/driver-order-info.html" />
         <option value="$PROJECT_DIR$/track24/templates/client-accepted-order-info.html" />
         <option value="$PROJECT_DIR$/track24/templates/client-more.html" />
+        <option value="$PROJECT_DIR$/track24/views.py" />
         <option value="$PROJECT_DIR$/track24/templates/client-add.html" />
       </list>
     </option>
@@ -1038,16 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="176" column="30" lean-forward="false" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
-          <folding>
-            <element signature="e#43#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/driver-order-info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -1075,11 +1068,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/track24/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="149" column="33" lean-forward="true" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
+          <folding>
+            <element signature="e#43#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="170" column="23" lean-forward="true" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
+        <state relative-caret-position="685">
+          <caret line="149" column="83" lean-forward="false" selection-start-line="149" selection-start-column="83" selection-end-line="149" selection-end-column="83" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />

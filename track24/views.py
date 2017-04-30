@@ -143,10 +143,10 @@ def AddOrder(request):
     url = "http://track24.beetechno.uz/api/customer/addOrders/"
     token = request.session["customer_token"]
     carTypeId = 1
-    lat_from = 41.357791
-    long_from = 69.246017
-    lat_to = 41.363698
-    long_to = 69.253581
+    lat_from = request.POST["from_lat"]
+    long_from = request.POST["from_long"]
+    lat_to = request.POST["to_lat"]
+    long_to = request.POST["to_long"]
     notes = request.POST["notes"]
     date = "16.05.2017"
     postData = {"token":token,"carTypeId":str(carTypeId),"lat_from":str(lat_from),"long_from":str(long_from),"lat_to":str(lat_to),"long_to":str(long_to),"notes":notes,"date":date}
