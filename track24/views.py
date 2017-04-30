@@ -354,6 +354,7 @@ def getAddress(lat,long):
         response = requests.post(url)
 
         dataBody = json.loads(response.text)['results']
+        print(dataBody)
         finalAddress = dataBody[0]["formatted_address"]
     except:
         finalAddress = "Не удалось определить аддресс"
