@@ -130,8 +130,9 @@ def AcceptedOrderDetailsForCustomer(request):
     postData = {'token': token}
     url = 'http://track24.beetechno.uz/api/customer/acceptedOrderInfo/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-
-    return render(request, "client-accepted-order-info.html",{"order":dataBody})
+    from_address = getAddress(dataBody["lat_from"], dataBody["long_from"])
+    to_address = getAddress(dataBody["lat_to"], dataBody["long_to"])
+    return render(request, "client-accepted-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
 
 
 def GoToAddOrder(request):
@@ -286,8 +287,11 @@ def OrderDetailsForDriver(request):
     postData = {'token': order_token,"userToken":driver_token}
     url = 'http://track24.beetechno.uz/api/driver/getOrderInfo/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
+    from_address = getAddress(dataBody["from_lat"], dataBody["from_long"])
+    to_address = getAddress(dataBody["to_lat"], dataBody["to_long"])
+
     print(dataBody)
-    return render(request, "driver-order-info.html",{"order":dataBody})
+    return render(request, "driver-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
 
 
 def FinishOrderDriver(request):
