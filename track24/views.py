@@ -323,6 +323,10 @@ def OfferPrice(request):
     return DriverOrders(request)
 
 
+def driverSettings(request):
+    return render(request, "carrier-profile.html")
+
+
 ####################################################################################################################################
 
 def MakeRequest(urlPath,post_data):

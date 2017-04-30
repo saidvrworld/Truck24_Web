@@ -32,4 +32,6 @@ urlpatterns = [
     url(r'^client-offer-accept/$', views.AcceptOffer, name='AcceptOffer'),
     url(r'^driver-offer-price/$', views.OfferPrice, name='OfferPrice'),
 
+    url(r'^driver-profile/$', views.driverSettings, name='driverSettings'),
+
 ]
