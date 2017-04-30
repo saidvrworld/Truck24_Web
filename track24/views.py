@@ -19,6 +19,7 @@ def main(request):
 ########################################################################################################################
 
 def ChooseCustomer(request):
+    return render(request, "client-auth.html")
     try:
          if(request.session["customer_token"]):
               return CustomerOrders(request)
@@ -29,6 +30,7 @@ def ChooseCustomer(request):
 
 
 def ChooseDriver(request):
+    return render(request, "carrier-auth.html")
     try:
          if(request.session["driver_token"]):
               return DriverOrders(request)
@@ -339,7 +341,9 @@ def getAddress(lat,long):
 
     url = "http://maps.googleapis.com/maps/api/geocode/json?latlng="+str(lat)+","+str(long)+"&sensor=true&language=russian"
     response = requests.post(url)
+
     dataBody = json.loads(response.text)['results']
+    print(dataBody)
     finalAddress = dataBody[0]["formatted_address"]
     return finalAddress
 
