@@ -174,6 +174,7 @@ def OffersList(request):
     postData = {'token': order_token}
     url = 'http://track24.beetechno.uz/api/customer/getOffers/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)
+    print(dataBody)
     return  render(request, "client-more-offers.html",{"offers":dataBody})
 
 def OfferInfo(request):
