@@ -152,7 +152,8 @@ def AddOrder(request):
     month = request.POST["month"]
     year = request.POST["year"]
     date = day+"."+month+"."+year
-
+    if(len(notes) == 0):
+        notes = "Нужно быстро доставить товар"
     postData = {"token":token,"carTypeId":str(carTypeId),"lat_from":str(lat_from),"long_from":str(long_from),"lat_to":str(lat_to),"long_to":str(long_to),"notes":notes,"date":date}
     print(postData)
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
