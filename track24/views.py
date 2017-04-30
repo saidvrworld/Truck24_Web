@@ -14,6 +14,10 @@ def main(request):
 
      return render(request, "index.html")
 
+########################################################################################################################
+#   CUSTOMER  CLASSES
+########################################################################################################################
+
 def ChooseCustomer(request):
     try:
          if(request.session["customer_token"]):
@@ -115,7 +119,7 @@ def OrderDetailsForCustomer(request):
     postData = {'token': token}
     url = 'http://track24.beetechno.uz/api/customer/getOrderInfo/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-    getAddress(dataBody["lat_from"],dataBody["long_from"])
+    getAddress(dataBody["from_lat"],dataBody["from_long"])
     return render(request, "client-more.html",dataBody)
 
 def AcceptedOrderDetailsForCustomer(request):
@@ -159,6 +163,39 @@ def FinishOrderCustomer(request):
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     return CustomerOrders(request)
 
+
+def OffersList(request):
+
+    order_id = request.POST["order_id"]
+    order_token = "86b9eba37d8284a4"+order_id+"ad0447ce737d8885"
+    postData = {'token': order_token}
+    url = 'http://track24.beetechno.uz/api/customer/getOffers/'
+    dataBody = MakeRequest(urlPath=url,post_data=postData)
+    return  render(request, "client-more-offers.html",{"offers":dataBody})
+
+def OfferInfo(request):
+
+    offer_id = request.POST["offer_id"]
+    offer_token = "86b9eba37d8284a4"+offer_id+"ad0447ce737d8885"
+    postData = {'token': offer_token}
+    url = 'http://track24.beetechno.uz/api/customer/getOfferInfo/'
+    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
+    return render(request, "client-more-offers-about.html",{"offer":dataBody})
+
+
+def AcceptOffer(request):
+
+    offer_id = request.POST["offer_id"]
+    offer_token = "86b9eba37d8284a4"+offer_id+"ad0447ce737d8885"
+    postData = {'token': offer_token}
+    url = 'http://track24.beetechno.uz/api/customer/acceptOffer/'
+    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
+    return CustomerOrders(request)
+
+
+########################################################################################################################
+#   DRIVER  CLASSES
+########################################################################################################################
 
 def logInDriver(request):
     phone_number = request.POST["phone_number"]
@@ -263,23 +300,6 @@ def FinishOrderDriver(request):
     return DriverOrders(request)
 
 
-def OffersList(request):
-
-    order_id = request.POST["order_id"]
-    order_token = "86b9eba37d8284a4"+order_id+"ad0447ce737d8885"
-    postData = {'token': order_token}
-    url = 'http://track24.beetechno.uz/api/customer/getOffers/'
-    dataBody = MakeRequest(urlPath=url,post_data=postData)
-    return  render(request, "client-more-offers.html",{"offers":dataBody})
-
-def OfferInfo(request):
-
-    offer_id = request.POST["offer_id"]
-    offer_token = "86b9eba37d8284a4"+offer_id+"ad0447ce737d8885"
-    postData = {'token': offer_token}
-    url = 'http://track24.beetechno.uz/api/customer/getOfferInfo/'
-    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-    return render(request, "client-more-offers-about.html",{"offer":dataBody})
 
 def OfferPrice(request):
 
@@ -296,15 +316,8 @@ def OfferPrice(request):
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     return DriverOrders(request)
 
-def AcceptOffer(request):
 
-    offer_id = request.POST["offer_id"]
-    offer_token = "86b9eba37d8284a4"+offer_id+"ad0447ce737d8885"
-    postData = {'token': offer_token}
-    url = 'http://track24.beetechno.uz/api/customer/acceptOffer/'
-    dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-    return CustomerOrders(request)
-
+####################################################################################################################################
 
 def MakeRequest(urlPath,post_data):
     response = requests.post(urlPath, data=post_data)
@@ -314,10 +327,10 @@ def MakeRequest(urlPath,post_data):
 
 def getAddress(lat,long):
 
-    url = "http://maps.googleapis.com/maps/api/geocode/"
-    postData = {'sensor': True,"language":"russian","latlng":str(lat)+","+str(long)}
-    response = requests.post(url, data=postData)
+    url = "http://maps.googleapis.com/maps/api/geocode/json?latlng="+str(lat)+","+str(long)+"&sensor=true&language=russian"
+    response = requests.post(url)
     dataBody = json.loads(response.text)['results']
-    print(dataBody)
+    finalAddress = dataBody[0]["formatted_address"]
+    return finalAddress
 
 
