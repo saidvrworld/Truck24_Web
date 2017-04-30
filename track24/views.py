@@ -115,7 +115,7 @@ def OrderDetailsForCustomer(request):
     postData = {'token': token}
     url = 'http://track24.beetechno.uz/api/customer/getOrderInfo/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-
+    getAddress(dataBody["lat_from"],dataBody["long_from"])
     return render(request, "client-more.html",dataBody)
 
 def AcceptedOrderDetailsForCustomer(request):
@@ -310,5 +310,14 @@ def MakeRequest(urlPath,post_data):
     response = requests.post(urlPath, data=post_data)
     dataBody = json.loads(response.text)['data']
     return dataBody
+
+
+def getAddress(lat,long):
+
+    url = "http://maps.googleapis.com/maps/api/geocode/"
+    postData = {'sensor': True,"language":"russian","latlng":str(lat)+","+str(long)}
+    response = requests.post(url, data=postData)
+    dataBody = json.loads(response.text)['results']
+    print(dataBody)
 
 
