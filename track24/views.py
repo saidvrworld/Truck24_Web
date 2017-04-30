@@ -350,10 +350,14 @@ def MakeRequest(urlPath,post_data):
 def getAddress(lat,long):
 
     url = "http://maps.googleapis.com/maps/api/geocode/json?latlng="+str(lat)+","+str(long)+"&sensor=true&language=russian"
-    response = requests.post(url)
+    try:
+        response = requests.post(url)
 
-    dataBody = json.loads(response.text)['results']
-    finalAddress = dataBody[0]["formatted_address"]
+        dataBody = json.loads(response.text)['results']
+        finalAddress = dataBody[0]["formatted_address"]
+    except:
+        finalAddress = "Не удалось определить аддресс"
+
     return finalAddress
 
 
