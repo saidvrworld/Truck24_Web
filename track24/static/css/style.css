@@ -256,6 +256,42 @@ i{
     color: #c59b08;
 }
 
+.rate-dis {
+	display: inline-block;
+    padding: 0 10px;
+    margin: -5px 0 0 -7px;
+}
+.rate-dis:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate-dis:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate-dis:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate-dis > input:checked ~ label {
+    color: #3F51B5;
+}
+.rate-dis:not(:checked) > ,
+.rate-dis:not(:checked) >  ~ label {
+    color: #3F51B5;
+}
+.rate-dis > input:checked + ,
+.rate-dis > input:checked +  ~ label,
+.rate-dis > input:checked ~ ,
+.rate-dis > input:checked ~  ~ label,
+.rate-dis >  ~ input:checked ~ label {
+    color: #3F51B5;
+}
+
 /* --------------- Rate --------------- */
 
 /* API_key = AIzaSyAZEtXGPfZ8aPl2sFdKyyytxqPQQ98HIIQ */ 
