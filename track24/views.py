@@ -121,7 +121,7 @@ def OrderDetailsForCustomer(request):
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     from_address = getAddress(dataBody["from_lat"],dataBody["from_long"])
     to_address = getAddress(dataBody["to_lat"],dataBody["to_long"])
-
+    print(dataBody)
     return render(request, "client-more.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
 
 def AcceptedOrderDetailsForCustomer(request):
@@ -174,7 +174,7 @@ def OffersList(request):
     postData = {'token': order_token}
     url = 'http://track24.beetechno.uz/api/customer/getOffers/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)
-    print(dataBody)
+    print("token",order_token,"offers",dataBody)
     return  render(request, "client-more-offers.html",{"offers":dataBody})
 
 def OfferInfo(request):
@@ -354,9 +354,9 @@ def getAddress(lat,long):
         response = requests.post(url)
 
         dataBody = json.loads(response.text)['results']
-        print(dataBody)
         finalAddress = dataBody[0]["formatted_address"]
     except:
+        print(dataBody)
         finalAddress = "Не удалось определить аддресс"
 
     return finalAddress
