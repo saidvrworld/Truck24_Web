@@ -275,6 +275,9 @@ def DriverOrders(request):
 
     postData = {"token":token}
     orders =  MakeRequest(urlPath=get_orders_url, post_data=postData)
+    for order in  orders:
+        from_address = getAddress(order["from_lat"], order["from_long"])
+        order["from_address"] = from_address
     accepted_orders = MakeRequest(urlPath=url_for_accepted_orders, post_data=postData)
     print(token)
     return render(request, "carrier.html",{"accepted_orders":accepted_orders,"orders":orders})
@@ -350,7 +353,6 @@ def getAddress(lat,long):
     response = requests.post(url)
 
     dataBody = json.loads(response.text)['results']
-    print(dataBody)
     finalAddress = dataBody[0]["formatted_address"]
     return finalAddress
 
