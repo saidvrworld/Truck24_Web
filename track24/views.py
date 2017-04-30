@@ -148,9 +148,13 @@ def AddOrder(request):
     lat_to = request.POST["to_lat"]
     long_to = request.POST["to_long"]
     notes = request.POST["notes"]
-    date = "16.05.2017"
-    postData = {"token":token,"carTypeId":str(carTypeId),"lat_from":str(lat_from),"long_from":str(long_from),"lat_to":str(lat_to),"long_to":str(long_to),"notes":notes,"date":date}
+    day = request.POST["day"]
+    month = request.POST["month"]
+    year = request.POST["year"]
+    date = day+"."+month+"."+year
 
+    postData = {"token":token,"carTypeId":str(carTypeId),"lat_from":str(lat_from),"long_from":str(long_from),"lat_to":str(lat_to),"long_to":str(long_to),"notes":notes,"date":date}
+    print(postData)
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     return CustomerOrders(request)
 
