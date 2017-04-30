@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-add.html" afterPath="$PROJECT_DIR$/track24/templates/client-add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/views.py" afterPath="$PROJECT_DIR$/track24/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +36,12 @@
       <file leaf-file-name="client-add.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="149" column="83" lean-forward="false" selection-start-line="149" selection-start-column="83" selection-end-line="149" selection-end-column="83" />
+            <state relative-caret-position="400">
+              <caret line="88" column="78" lean-forward="false" selection-start-line="88" selection-start-column="78" selection-end-line="88" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
@@ -1080,11 +1080,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="149" column="83" lean-forward="false" selection-start-line="149" selection-start-column="83" selection-end-line="149" selection-end-column="83" />
+        <state relative-caret-position="400">
+          <caret line="88" column="78" lean-forward="false" selection-start-line="88" selection-start-column="78" selection-end-line="88" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
