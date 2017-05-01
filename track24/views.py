@@ -85,9 +85,17 @@ def ClientSmsVerification(request):
 
 def signInCustomer(request):
 
+    try:
+        token = request.session["customer_token"]
+    except:
+        return render(request, "client-auth.html")
+
+
     url = "http://track24.beetechno.uz/api/"
     name = request.POST["userName"]
-    token = request.session["customer_token"]
+    if(len(name)==0):
+        return render(request, "NameError.html")
+
     postData = {"token":token,"name":name}
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     request.session["customer_token"] = dataBody["token"]
@@ -141,7 +149,11 @@ def GoToAddOrder(request):
 def AddOrder(request):
 
     url = "http://track24.beetechno.uz/api/customer/addOrders/"
-    token = request.session["customer_token"]
+    try:
+        token = request.session["customer_token"]
+    except:
+        return render(request, "client-auth.html")
+
     carTypeId = 1
     lat_from = request.POST["from_lat"]
     long_from = request.POST["from_long"]
