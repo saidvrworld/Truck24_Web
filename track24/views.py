@@ -185,7 +185,7 @@ def FinishOrderCustomer(request):
 
 
 def OffersList(request):
-
+    print("offerList")
     order_id = request.POST["order_id"]
     order_token = "86b9eba37d8284a4"+str(order_id)+"ad0447ce737d8885"
     postData = {'token': order_token}
@@ -195,7 +195,7 @@ def OffersList(request):
     return  render(request, "client-more-offers.html",{"offers":dataBody})
 
 def OfferInfo(request):
-
+    print("offerinFo")
     offer_id = request.POST["offer_id"]
     offer_token = "86b9eba37d8284a4"+offer_id+"ad0447ce737d8885"
     postData = {'token': offer_token}
