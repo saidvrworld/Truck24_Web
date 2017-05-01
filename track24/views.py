@@ -187,7 +187,7 @@ def FinishOrderCustomer(request):
 def OffersList(request):
 
     order_id = request.POST["order_id"]
-    order_token = "86b9eba37d8284a4"+order_id+"ad0447ce737d8885"
+    order_token = "86b9eba37d8284a4"+str(order_id)+"ad0447ce737d8885"
     postData = {'token': order_token}
     url = 'http://track24.beetechno.uz/api/customer/getOffers/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)
