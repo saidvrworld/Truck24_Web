@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-done-orders.html" afterPath="$PROJECT_DIR$/track24/templates/client-done-orders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client.html" afterPath="$PROJECT_DIR$/track24/templates/client.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client-done-orders.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="client-done-orders.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/templates/client-done-orders.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
@@ -104,13 +104,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="client.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track24/templates/client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="96" column="25" lean-forward="true" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+            <state relative-caret-position="360">
+              <caret line="85" column="41" lean-forward="false" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
               <folding>
                 <element signature="e#3869#3875#0#HTML" expanded="true" />
+                <element signature="e#4689#4695#0#HTML" expanded="true" />
+                <element signature="e#5010#5016#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,8 +193,8 @@
         <option value="$PROJECT_DIR$/track24/templates/carrier-sign-up.html" />
         <option value="$PROJECT_DIR$/track24/views.py" />
         <option value="$PROJECT_DIR$/track24/urls.py" />
-        <option value="$PROJECT_DIR$/track24/templates/client.html" />
         <option value="$PROJECT_DIR$/track24/templates/client-done-orders.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client.html" />
       </list>
     </option>
   </component>
@@ -994,21 +996,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/templates/client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="96" column="25" lean-forward="true" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
-          <folding>
-            <element signature="e#3869#3875#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/client-done-orders.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="85" column="41" lean-forward="false" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+          <folding>
+            <element signature="e#3869#3875#0#HTML" expanded="true" />
+            <element signature="e#4689#4695#0#HTML" expanded="true" />
+            <element signature="e#5010#5016#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
