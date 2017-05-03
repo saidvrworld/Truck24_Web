@@ -154,7 +154,7 @@ def AddOrder(request):
     except:
         return render(request, "client-auth.html")
 
-    carTypeId = 1
+    carTypeId = request.POST["carTypeId"]
     lat_from = request.POST["from_lat"]
     long_from = request.POST["from_long"]
     lat_to = request.POST["to_lat"]
@@ -267,7 +267,7 @@ def signInDriver(request):
     maxWeight = request.POST["maxWeight"]
     carNumber = request.POST["carNumber"]
     detail = request.POST["detail"]
-    carTypeId = 2
+    carTypeId = request.POST["carTypeId"]
 
     postData = {"token":token,"name":name,"maxWeight":maxWeight,"carNumber":carNumber,"detail":detail,"carTypeId":carTypeId}
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
