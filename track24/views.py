@@ -166,16 +166,21 @@ def AddOrder(request):
     except:
         return render(request, "client-auth.html")
 
-    carTypeId = request.POST["carTypeId"]
-    lat_from = request.POST["from_lat"]
-    long_from = request.POST["from_long"]
-    lat_to = request.POST["to_lat"]
-    long_to = request.POST["to_long"]
-    notes = request.POST["notes"]
-    day = request.POST["day"]
-    month = request.POST["month"]
-    year = request.POST["year"]
-    date = day+"."+month+"."+year
+    try:
+
+        carTypeId = request.POST["carTypeId"]
+        lat_from = request.POST["from_lat"]
+        long_from = request.POST["from_long"]
+        lat_to = request.POST["to_lat"]
+        long_to = request.POST["to_long"]
+        notes = request.POST["notes"]
+        day = request.POST["day"]
+        month = request.POST["month"]
+        year = request.POST["year"]
+        date = day+"."+month+"."+year
+    except:
+        return render(request, "FieldsEmptyError.html")
+
     if(len(notes) == 0):
         notes = "Нужно быстро доставить товар"
     postData = {"token":token,"carTypeId":str(carTypeId),"lat_from":str(lat_from),"long_from":str(long_from),"lat_to":str(lat_to),"long_to":str(long_to),"notes":notes,"date":date}
