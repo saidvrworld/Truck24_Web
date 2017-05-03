@@ -106,7 +106,6 @@ def signInCustomer(request):
         return render(request, "client-sign-up.html")
 
 
-
 def CustomerOrders(request):
     url = "http://track24.beetechno.uz/api/customer/getOrders/"
     try:
@@ -119,6 +118,19 @@ def CustomerOrders(request):
     response = requests.post(url, data=postData)
     dataBody = json.loads(response.text)
     return render(request, "client.html",dataBody)
+
+def CustomerDoneOrders(request):
+    url = "http://track24.beetechno.uz/api/customer/getFinishedOrders/"
+    try:
+        token = request.session["customer_token"]
+    except:
+        return render(request, "client-auth.html")
+
+    postData = {"token":token}
+
+    response = requests.post(url, data=postData)
+    dataBody = json.loads(response.text)
+    return render(request, "client-done-orders.html",dataBody)
 
 
 def OrderDetailsForCustomer(request):

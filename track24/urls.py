@@ -18,6 +18,7 @@ urlpatterns = [
 
     url(r'^client-go-to-add-order/$', views.GoToAddOrder, name='GoToAddOrder'),
     url(r'^client-add-order/$', views.AddOrder, name='AddOrder'),
+    url(r'^client-done-orders/$', views.CustomerDoneOrders, name='DoneOrdersCustomer'),
 
     url(r'^client-order-details/$', views.OrderDetailsForCustomer, name='OrderDetailsForCustomer'),
     url(r'^client-accepted-order-details/$', views.AcceptedOrderDetailsForCustomer, name='AcceptedOrderDetailsForCustomer'),
