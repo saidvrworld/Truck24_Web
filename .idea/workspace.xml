@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/carrier.html" afterPath="$PROJECT_DIR$/track24/templates/carrier.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-add.html" afterPath="$PROJECT_DIR$/track24/templates/client-add.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,16 +60,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carrier-auth-sms.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/track24/templates/carrier-auth-sms.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="driver-order-info.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/templates/driver-order-info.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carrier.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="carrier.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/templates/carrier.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="63" column="68" lean-forward="true" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
+            <state relative-caret-position="390">
+              <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -98,6 +87,18 @@
               <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
               <folding>
                 <element signature="e#43#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client-add.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,7 +177,6 @@
         <option value="$PROJECT_DIR$/track24/templates/MapTest.html" />
         <option value="$PROJECT_DIR$/track24/templates/carrier-profile.html" />
         <option value="$PROJECT_DIR$/track24/templates/client-accepted-order-info.html" />
-        <option value="$PROJECT_DIR$/track24/templates/client-add.html" />
         <option value="$PROJECT_DIR$/track24/urls.py" />
         <option value="$PROJECT_DIR$/track24/views.py" />
         <option value="$PROJECT_DIR$/track24/templates/NumberError.html" />
@@ -190,6 +190,7 @@
         <option value="$PROJECT_DIR$/track24/templates/driver-order-info.html" />
         <option value="$PROJECT_DIR$/track24/templates/client.html" />
         <option value="$PROJECT_DIR$/track24/templates/carrier.html" />
+        <option value="$PROJECT_DIR$/track24/templates/client-add.html" />
       </list>
     </option>
   </component>
@@ -281,6 +282,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Track24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Track24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="track24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -860,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="164" column="41" lean-forward="false" selection-start-line="164" selection-start-column="41" selection-end-line="164" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -995,16 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/client.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1015,9 +1021,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/carrier.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="63" column="68" lean-forward="true" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
+        <state relative-caret-position="390">
+          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
