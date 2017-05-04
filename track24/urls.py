@@ -8,7 +8,10 @@ urlpatterns = [
     url(r'^driver-auth/$', views.ChooseDriver, name='chooseDriver'),
 
     url(r'^client-logIn/$', views.logInCustomer, name='logInCustomer'),
+    url(r'^client-logOut/$', views.logOutCustomer, name='logOutCustomer'),
+
     url(r'^driver-logIn/$', views.logInDriver, name='logInDriver'),
+    url(r'^driver-logOut/$', views.logOutDriver, name='logOutDriver'),
 
     url(r'^client-sms/$', views.ClientSmsVerification, name='clientSmsVerification'),
     url(r'^driver-sms/$', views.DriverSmsVerification, name='driverSmsVerification'),

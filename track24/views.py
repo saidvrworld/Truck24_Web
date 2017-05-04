@@ -53,6 +53,11 @@ def logInCustomer(request):
 
     return render(request, "client-auth-sms.html")
 
+def logOutCustomer(request):
+
+    request.session["customer_token"] = None
+    return render(request, "client-auth.html")
+
 
 def ClientSmsVerification(request):
     token = None
@@ -245,6 +250,11 @@ def logInDriver(request):
     request.session["driver_token"] = token
 
     return render(request, "carrier-auth-sms.html")
+
+def logOutDriver(request):
+
+    request.session["driver_token"] = None
+    return render(request, "carrier-auth.html")
 
 
 def DriverSmsVerification(request):
