@@ -1,6 +1,9 @@
 from django.conf.urls import url
 from track24 import views
 
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     url(r'^main/$',views.main,name='main'),
@@ -37,5 +40,10 @@ urlpatterns = [
     url(r'^driver-offer-price/$', views.OfferPrice, name='OfferPrice'),
 
     url(r'^driver-profile/$', views.driverSettings, name='driverSettings'),
+    url(r'^driver-profile/loadUserPhoto$', views.LoadUserPhoto, name='loadUserPhoto'),
 
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

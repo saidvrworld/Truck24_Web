@@ -382,12 +382,47 @@ def OfferPrice(request):
 
 def driverSettings(request):
     my_token = request.session["driver_token"]
-    postData = {'token': my_token}
-    url = 'http://track24.beetechno.uz/api/customer/getNearInfo/'
-    print(postData)
-    dataBody = MakeRequest(urlPath=url, post_data=postData)[0]
-    print(dataBody)
-    return render(request, "carrier-profile.html", {"driver": dataBody})
+    try:
+        userImage = request.POST["userImageUrl"]
+
+    except:
+        userImage = "#"
+
+    return render(request, "carrier-profile.html", {"userImageUrl": userImage})
+
+
+from django.core.files.storage import FileSystemStorage
+from requests_toolbelt.multipart.encoder import MultipartEncoder
+from django.conf import settings
+import os
+
+def LoadUserPhoto(request):
+
+    try:
+        userId = request.session["driver_token"]
+    except:
+        return render(request, "carrier-auth.html")
+
+    if request.method == 'POST' and request.FILES['userPhoto']:
+        myfile = request.FILES['userPhoto']
+        fs = FileSystemStorage()
+        filename = fs.save(userId+".jpg", myfile)
+        return SendMultipart(request,userId)
+
+    return render(request, "carrier-profile.html", {"userImageUrl": "#"})
+
+def SendMultipart(request,fileName):
+
+    multipart_data = MultipartEncoder(
+        fields={
+            'userPhoto': ( fileName + ".jpg",open(os.path.join(settings.MEDIA_ROOT, fileName + ".jpg"), 'rb'),),
+        }
+    )
+    response = requests.post('http://track24.beetechno.uz/api/driver/uploadPhoto/', data=multipart_data,
+                             headers={'Content-Type': multipart_data.content_type})
+    os.remove(os.path.join(settings.MEDIA_ROOT, fileName + ".jpg"))
+    photoUrl = json.loads(response.text)['data'][0]["photoUrl"]
+    return render(request, "carrier-profile.html", {"userImageUrl": photoUrl})
 
 
 ####################################################################################################################################

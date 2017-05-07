@@ -13,3 +13,4 @@ six==1.10.0
 Werkzeug==0.11.15
 whitenoise==3.3.0
 psycopg2==2.6.2
+requests_toolbelt==0.7.1
