@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/static/img/car_icon.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/static/img/driverLocation.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-accepted-order-info.html" afterPath="$PROJECT_DIR$/track24/templates/client-accepted-order-info.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +24,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="2415">
               <caret line="168" column="166" lean-forward="false" selection-start-line="168" selection-start-column="166" selection-end-line="168" selection-end-column="166" />
               <folding>
                 <element signature="e#43#75#0" expanded="true" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="client-accepted-order-info.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track24/templates/client-accepted-order-info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="244" column="42" lean-forward="false" selection-start-line="244" selection-start-column="42" selection-end-line="244" selection-end-column="42" />
+            <state relative-caret-position="644">
+              <caret line="256" column="13" lean-forward="false" selection-start-line="256" selection-start-column="13" selection-end-line="256" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -67,7 +66,7 @@
       <file leaf-file-name="client-more.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/templates/client-more.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
+            <state relative-caret-position="15">
               <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
               <folding />
             </state>
@@ -87,8 +86,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="124" column="18" lean-forward="true" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+            <state relative-caret-position="1860">
+              <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -219,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -361,6 +359,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -669,10 +668,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27825466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -928,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="87" lean-forward="false" selection-start-line="40" selection-start-column="87" selection-end-line="40" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1605">
           <caret line="107" column="77" lean-forward="false" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="68" column="113" lean-forward="false" selection-start-line="68" selection-start-column="113" selection-end-line="68" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="72" column="67" lean-forward="false" selection-start-line="72" selection-start-column="67" selection-end-line="72" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/templates/client-more.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/carrier-profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1485">
@@ -1023,15 +1009,15 @@
     <entry file="file://$PROJECT_DIR$/track24/static/img/driver.jpeg" />
     <entry file="file://$PROJECT_DIR$/track24/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="124" column="18" lean-forward="true" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+        <state relative-caret-position="1860">
+          <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/track24/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="2415">
           <caret line="168" column="166" lean-forward="false" selection-start-line="168" selection-start-column="166" selection-end-line="168" selection-end-column="166" />
           <folding>
             <element signature="e#43#75#0" expanded="true" />
@@ -1039,10 +1025,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-more.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/client-accepted-order-info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="244" column="42" lean-forward="false" selection-start-line="244" selection-start-column="42" selection-end-line="244" selection-end-column="42" />
+        <state relative-caret-position="644">
+          <caret line="256" column="13" lean-forward="false" selection-start-line="256" selection-start-column="13" selection-end-line="256" selection-end-column="13" />
           <folding />
         </state>
       </provider>
