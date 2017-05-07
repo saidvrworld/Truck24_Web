@@ -384,6 +384,7 @@ def driverSettings(request):
     my_token = request.session["driver_token"]
     postData = {'token': my_token}
     url = 'http://track24.beetechno.uz/api/customer/getNearInfo/'
+    print(postData)
     dataBody = MakeRequest(urlPath=url, post_data=postData)[0]
     print(dataBody)
     return render(request, "carrier-profile.html", {"driver": dataBody})
