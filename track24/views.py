@@ -410,15 +410,42 @@ def LoadUserPhoto(request):
         myfile = request.FILES['userPhoto']
         fs = FileSystemStorage()
         filename = fs.save(userId+".jpg", myfile)
-        return SendMultipart(request,userId)
+        return SendMultipartUser(request,userId)
 
     return driverSettings(request)
 
-def SendMultipart(request,fileName):
+def SendMultipartUser(request,fileName):
 
     multipart_data = MultipartEncoder(
         fields={
             'userPhoto': ( fileName + ".jpg",open(os.path.join(settings.MEDIA_ROOT, fileName + ".jpg"), 'rb'),),
+        }
+    )
+    response = requests.post('http://track24.beetechno.uz/api/driver/uploadPhoto/', data=multipart_data,
+                             headers={'Content-Type': multipart_data.content_type})
+    os.remove(os.path.join(settings.MEDIA_ROOT, fileName + ".jpg"))
+    return driverSettings(request)
+
+def LoadCarPhoto(request):
+
+    try:
+        userId = request.session["driver_token"]
+    except:
+        return render(request, "carrier-auth.html")
+
+    if request.method == 'POST' and request.FILES['userPhoto']:
+        myfile = request.FILES['carPhoto']
+        fs = FileSystemStorage()
+        filename = fs.save(userId+".jpg", myfile)
+        return SendMultipartCar(request,userId)
+
+    return driverSettings(request)
+
+def SendMultipartCar(request,fileName):
+
+    multipart_data = MultipartEncoder(
+        fields={
+            'carPhoto': ( fileName + ".jpg",open(os.path.join(settings.MEDIA_ROOT, fileName + ".jpg"), 'rb'),),
         }
     )
     response = requests.post('http://track24.beetechno.uz/api/driver/uploadPhoto/', data=multipart_data,

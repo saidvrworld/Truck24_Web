@@ -41,6 +41,7 @@ urlpatterns = [
 
     url(r'^driver-profile/$', views.driverSettings, name='driverSettings'),
     url(r'^driver-profile/loadUserPhoto$', views.LoadUserPhoto, name='loadUserPhoto'),
+    url(r'^driver-profile/loadCarPhoto$', views.LoadCarPhoto, name='loadCarPhoto'),
 
 ]
 
