@@ -157,7 +157,16 @@ def AcceptedOrderDetailsForCustomer(request):
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     from_address = getAddress(dataBody["lat_from"], dataBody["long_from"])
     to_address = getAddress(dataBody["lat_to"], dataBody["long_to"])
-    return render(request, "client-accepted-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
+
+    try:
+        driverLat = dataBody["userLat"]
+        driverLong = dataBody["userLong"]
+    except:
+        driverLat = 0
+        driverLong = 0
+
+
+    return render(request, "client-accepted-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address,"driverLat":driverLat,driverLong:"driverLong"})
 
 
 def GoToAddOrder(request):
