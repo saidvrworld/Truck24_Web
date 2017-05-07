@@ -422,6 +422,7 @@ def SendMultipart(request,fileName):
                              headers={'Content-Type': multipart_data.content_type})
     os.remove(os.path.join(settings.MEDIA_ROOT, fileName + ".jpg"))
     photoUrl = json.loads(response.text)['data'][0]["photoUrl"]
+    print(photoUrl)
     return render(request, "carrier-profile.html", {"userImageUrl": photoUrl})
 
 
