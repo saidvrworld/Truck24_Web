@@ -8,7 +8,10 @@ import json
 import requests
 from django.utils import timezone
 from django.core.urlresolvers import reverse
-
+from django.core.files.storage import FileSystemStorage
+from requests_toolbelt.multipart.encoder import MultipartEncoder
+from django.conf import settings
+import os
 
 def main(request):
 
@@ -394,10 +397,7 @@ def driverSettings(request):
     return render(request, "carrier-profile.html",{"driver":dataBody})
 
 
-from django.core.files.storage import FileSystemStorage
-from requests_toolbelt.multipart.encoder import MultipartEncoder
-from django.conf import settings
-import os
+
 
 def LoadUserPhoto(request):
 
@@ -433,7 +433,7 @@ def LoadCarPhoto(request):
     except:
         return render(request, "carrier-auth.html")
 
-    if request.method == 'POST' and request.FILES['userPhoto']:
+    if request.method == 'POST' and request.FILES['carPhoto']:
         myfile = request.FILES['carPhoto']
         fs = FileSystemStorage()
         filename = fs.save(userId+".jpg", myfile)
