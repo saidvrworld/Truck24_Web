@@ -166,7 +166,7 @@ def AcceptedOrderDetailsForCustomer(request):
         driverLong = 0
 
 
-    return render(request, "client-accepted-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address,"driverLat":driverLat,driverLong:"driverLong"})
+    return render(request, "client-accepted-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address,"driverLat":driverLat,"driverLong":driverLong})
 
 
 def GoToAddOrder(request):
