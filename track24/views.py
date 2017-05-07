@@ -381,14 +381,17 @@ def OfferPrice(request):
 
 
 def driverSettings(request):
-    my_token = request.session["driver_token"]
     try:
-        userImage = request.POST["userImageUrl"]
-
+        userId = request.session["driver_token"]
     except:
-        userImage = "#"
+        return render(request, "carrier-auth.html")
 
-    return render(request, "carrier-profile.html", {"userImageUrl": userImage})
+    postData = {'token': userId}
+    url = 'http://track24.beetechno.uz/api/driver/getDriverInfo/'
+
+    dataBody = MakeRequest(urlPath=url, post_data=postData)[0]
+
+    return render(request, "carrier-profile.html",{"driver":dataBody})
 
 
 from django.core.files.storage import FileSystemStorage
@@ -409,7 +412,7 @@ def LoadUserPhoto(request):
         filename = fs.save(userId+".jpg", myfile)
         return SendMultipart(request,userId)
 
-    return render(request, "carrier-profile.html", {"userImageUrl": "#"})
+    return driverSettings(request)
 
 def SendMultipart(request,fileName):
 
@@ -421,9 +424,7 @@ def SendMultipart(request,fileName):
     response = requests.post('http://track24.beetechno.uz/api/driver/uploadPhoto/', data=multipart_data,
                              headers={'Content-Type': multipart_data.content_type})
     os.remove(os.path.join(settings.MEDIA_ROOT, fileName + ".jpg"))
-    photoUrl = json.loads(response.text)['data'][0]["photoUrl"]
-    print(photoUrl)
-    return render(request, "carrier-profile.html", {"userImageUrl": photoUrl})
+    return driverSettings(request)
 
 
 ####################################################################################################################################
