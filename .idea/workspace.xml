@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/static/img/YukBor.jpg" afterPath="$PROJECT_DIR$/track24/static/img/YukBor.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/chooseType.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/static/css/style.css" afterPath="$PROJECT_DIR$/track24/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/urls.py" afterPath="$PROJECT_DIR$/track24/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/views.py" afterPath="$PROJECT_DIR$/track24/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +24,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track24/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="435" column="54" lean-forward="false" selection-start-line="435" selection-start-column="54" selection-end-line="435" selection-end-column="54" />
+            <state relative-caret-position="180">
+              <caret line="179" column="16" lean-forward="true" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
               <folding>
                 <element signature="e#43#75#0" expanded="true" />
               </folding>
@@ -32,11 +36,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="client-accepted-order-info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/client-accepted-order-info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="772">
+              <caret line="258" column="13" lean-forward="false" selection-start-line="219" selection-start-column="6" selection-end-line="258" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client-add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-128">
+              <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client-more.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/client-more.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="84" column="32" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="84" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+            <state relative-caret-position="375">
+              <caret line="26" column="89" lean-forward="false" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="89" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -44,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
@@ -54,22 +88,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carrier-sign-up.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/track24/templates/carrier-sign-up.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="174" column="30" lean-forward="false" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
+            <state relative-caret-position="1438">
+              <caret line="121" column="39" lean-forward="false" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client-more.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/track24/templates/client-more.html">
+      <file leaf-file-name="chooseType.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/track24/templates/chooseType.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="973">
-              <caret line="170" column="14" lean-forward="false" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="315">
+              <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,40 +118,6 @@
               <caret line="45" column="85" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="85" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/track24/static/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="235" column="23" lean-forward="true" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client-more-offers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/track24/templates/client-more-offers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carrier-profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/track24/templates/carrier-profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/taxibot/models.py" />
         <option value="$PROJECT_DIR$/taxibot/urls.py" />
         <option value="$PROJECT_DIR$/taxibot/BotManager.py" />
         <option value="$PROJECT_DIR$/taxibot/views.py" />
@@ -184,16 +186,17 @@
         <option value="$PROJECT_DIR$/track24/templates/carrier-sign-up.html" />
         <option value="$PROJECT_DIR$/track24/templates/client-add.html" />
         <option value="$PROJECT_DIR$/track24/templates/client.html" />
-        <option value="$PROJECT_DIR$/track24/static/css/style.css" />
         <option value="$PROJECT_DIR$/track24/templates/client-accepted-order-info.html" />
         <option value="$PROJECT_DIR$/track24/templates/client-more.html" />
         <option value="$PROJECT_DIR$/track24/templates/driver-order-info.html" />
         <option value="$PROJECT_DIR$/UMS_1/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/track24/urls.py" />
-        <option value="$PROJECT_DIR$/track24/views.py" />
         <option value="$PROJECT_DIR$/track24/templates/carrier-profile.html" />
         <option value="$PROJECT_DIR$/track24/templates/index.html" />
+        <option value="$PROJECT_DIR$/track24/static/css/style.css" />
+        <option value="$PROJECT_DIR$/track24/urls.py" />
+        <option value="$PROJECT_DIR$/track24/templates/chooseType.html" />
+        <option value="$PROJECT_DIR$/track24/views.py" />
       </list>
     </option>
   </component>
@@ -383,11 +386,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/track24/static/img" />
       <recent name="$PROJECT_DIR$/track24/templates" />
+      <recent name="$PROJECT_DIR$/track24/static/css" />
+      <recent name="$PROJECT_DIR$/track24/static/img" />
       <recent name="$PROJECT_DIR$/track24/static/js" />
       <recent name="$PROJECT_DIR$/umsbot/static" />
-      <recent name="$PROJECT_DIR$/umsbot/static/wear" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/umsbot/template" />
@@ -673,9 +676,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28540772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28540772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -706,13 +709,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -915,23 +911,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1695">
-          <caret line="113" column="110" lean-forward="false" selection-start-line="113" selection-start-column="110" selection-end-line="113" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/static/img/driver.jpeg" />
-    <entry file="file://$PROJECT_DIR$/track24/templates/client-accepted-order-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3870">
-          <caret line="258" column="13" lean-forward="false" selection-start-line="219" selection-start-column="6" selection-end-line="258" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/driver-order-info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3705">
@@ -980,49 +960,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/templates/client-more.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="973">
-          <caret line="170" column="14" lean-forward="false" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/client-more-offers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/track24/templates/client-more-offers-about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="45" column="85" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/track24/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/track24/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="435" column="54" lean-forward="false" selection-start-line="435" selection-start-column="54" selection-end-line="435" selection-end-column="54" />
-          <folding>
-            <element signature="e#43#75#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,19 +985,84 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="235" column="23" lean-forward="true" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="48" column="75" lean-forward="false" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1438">
+          <caret line="121" column="39" lean-forward="false" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="89" lean-forward="false" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-more-offers-about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="45" column="85" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-accepted-order-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="258" column="13" lean-forward="false" selection-start-line="219" selection-start-column="6" selection-end-line="258" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-more.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="84" column="32" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="84" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/chooseType.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/templates/client-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128">
+          <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="179" column="16" lean-forward="true" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
+          <folding>
+            <element signature="e#43#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

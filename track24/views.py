@@ -173,7 +173,7 @@ def AcceptedOrderDetailsForCustomer(request):
 
 
 def GoToAddOrder(request):
-    return render(request, "client-add.html")
+    return CarTypesCustomer(request)
 
 def AddOrder(request):
 
@@ -184,8 +184,12 @@ def AddOrder(request):
         return render(request, "client-auth.html")
 
     try:
+        carTypeId = request.session["carId"]
+    except:
+        return AddOrder(request)
 
-        carTypeId = request.POST["carTypeId"]
+    try:
+
         lat_from = request.POST["from_lat"]
         long_from = request.POST["from_long"]
         lat_to = request.POST["to_lat"]
@@ -243,6 +247,24 @@ def AcceptOffer(request):
     url = 'http://track24.beetechno.uz/api/customer/acceptOffer/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     return CustomerOrders(request)
+
+def CarTypesCustomer(request):
+    get_carType_url = "http://track24.beetechno.uz/api/customer/carTypes/"
+
+    try:
+        token = request.session["customer_token"]
+    except:
+        return render(request, "client-auth.html")
+
+    postData = {"token":token}
+    types =  MakeRequest(urlPath=get_carType_url, post_data=postData)
+    return render(request, "chooseType.html",{"types":types})
+
+def ChooseTypeForAddOrder(request):
+    type_id = request.POST["carTypeId"]
+    request.session["carId"] = type_id
+
+    return render(request, "client-add.html")
 
 
 ########################################################################################################################
@@ -452,6 +474,8 @@ def SendMultipartCar(request,fileName):
                              headers={'Content-Type': multipart_data.content_type})
     os.remove(os.path.join(settings.MEDIA_ROOT, fileName + ".jpg"))
     return driverSettings(request)
+
+
 
 
 ####################################################################################################################################
