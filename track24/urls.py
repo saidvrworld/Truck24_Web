@@ -21,6 +21,7 @@ urlpatterns = [
 
     url(r'^client-signIn/$', views.signInCustomer, name='signInCustomer'),
     url(r'^driver-signIn/$', views.signInDriver, name='signInDriver'),
+    url(r'^driver-signIn-cars/$', views.ChooseTypeForDriver, name='ChooseCarDriver'),
 
     url(r'^client-go-to-add-order/$', views.GoToAddOrder, name='GoToAddOrder'),
     url(r'^client-add-order/$', views.AddOrder, name='AddOrder'),

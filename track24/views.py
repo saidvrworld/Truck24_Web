@@ -318,9 +318,33 @@ def DriverSmsVerification(request):
         return DriverOrders(request)
 
     else:
-        return render(request, "carrier-sign-up.html")
+        return CarTypesDriver(request)
+
+
+def CarTypesDriver(request):
+    get_carType_url = "http://track24.beetechno.uz/api/customer/carTypes/"
+
+    try:
+        token = request.session["driver_token"]
+    except:
+        return render(request, "carrier-auth.html")
+
+    postData = {"token":token}
+    types =  MakeRequest(urlPath=get_carType_url, post_data=postData)
+    return render(request, "chooseTypeDriver.html",{"types":types})
+
+def ChooseTypeForDriver(request):
+    type_id = request.POST["carTypeId"]
+    request.session["carId"] = type_id
+
+    return render(request, "carrier-sign-up.html")
+
 
 def signInDriver(request):
+    try:
+        carTypeId = request.session["carId"]
+    except:
+        return CarTypesDriver(request)
 
     url = "http://track24.beetechno.uz/api/"
     name = request.POST["userName"]
@@ -328,7 +352,6 @@ def signInDriver(request):
     maxWeight = request.POST["maxWeight"]
     carNumber = request.POST["carNumber"]
     detail = request.POST["detail"]
-    carTypeId = request.POST["carTypeId"]
 
     postData = {"token":token,"name":name,"maxWeight":maxWeight,"carNumber":carNumber,"detail":detail,"carTypeId":carTypeId}
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
