@@ -380,6 +380,20 @@ def DriverOrders(request):
     print(token)
     return render(request, "carrier.html",{"accepted_orders":accepted_orders,"orders":orders})
 
+def DriverFinishedOrders(request):
+    url_for_finished_orders = "http://track24.beetechno.uz/api/driver/myFinishedOrders/"
+
+    try:
+        token = request.session["driver_token"]
+    except:
+        return render(request, "carrier-auth.html")
+
+    postData = {"token":token}
+    orders =  MakeRequest(urlPath=url_for_finished_orders, post_data=postData)
+
+    print(token)
+    return render(request, "carrier-finished-orders.html",{"finished_orders":orders})
+
 
 def OrderDetailsForDriver(request):
     order_id = request.POST["order_id"]

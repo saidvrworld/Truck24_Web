@@ -43,6 +43,8 @@ urlpatterns = [
     url(r'^driver-offer-price/$', views.OfferPrice, name='OfferPrice'),
 
     url(r'^driver-profile/$', views.driverSettings, name='driverSettings'),
+    url(r'^driver-finished-orders/$', views.DriverFinishedOrders, name='driverFinishedOrders'),
+
     url(r'^driver-profile/loadUserPhoto$', views.LoadUserPhoto, name='loadUserPhoto'),
     url(r'^driver-profile/loadCarPhoto$', views.LoadCarPhoto, name='loadCarPhoto'),
 

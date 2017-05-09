@@ -260,7 +260,7 @@ i{
 
 /* --------------- Rate --------------- */
 
-/* --------------- Rate --------------- */
+/* --------------- Rate-dis --------------- */
 
 *{
     margin: 0;
@@ -280,7 +280,6 @@ i{
     width:1em;
     overflow:hidden;
     white-space:nowrap;
-    cursor:pointer;
     font-size:30px;
     color:#ccc;
 }
