@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/track24/templates/carrier-finished-orders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/static/css/style.css" afterPath="$PROJECT_DIR$/track24/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/static/js/material-add.min.js" afterPath="$PROJECT_DIR$/track24/static/js/material-add.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/static/js/material.min.js" afterPath="$PROJECT_DIR$/track24/static/js/material.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/FieldsEmptyError.html" afterPath="$PROJECT_DIR$/track24/templates/FieldsEmptyError.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/Mockup.html" afterPath="$PROJECT_DIR$/track24/templates/Mockup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/NameError.html" afterPath="$PROJECT_DIR$/track24/templates/NameError.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/NumberError.html" afterPath="$PROJECT_DIR$/track24/templates/NumberError.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/PriceError.html" afterPath="$PROJECT_DIR$/track24/templates/PriceError.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/SmsError.html" afterPath="$PROJECT_DIR$/track24/templates/SmsError.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/carrier-auth-sms.html" afterPath="$PROJECT_DIR$/track24/templates/carrier-auth-sms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/carrier-auth.html" afterPath="$PROJECT_DIR$/track24/templates/carrier-auth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/carrier-profile.html" afterPath="$PROJECT_DIR$/track24/templates/carrier-profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/carrier-sign-up.html" afterPath="$PROJECT_DIR$/track24/templates/carrier-sign-up.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/carrier.html" afterPath="$PROJECT_DIR$/track24/templates/carrier.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/chooseType.html" afterPath="$PROJECT_DIR$/track24/templates/chooseType.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/chooseTypeDriver.html" afterPath="$PROJECT_DIR$/track24/templates/chooseTypeDriver.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-accepted-order-info.html" afterPath="$PROJECT_DIR$/track24/templates/client-accepted-order-info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-add.html" afterPath="$PROJECT_DIR$/track24/templates/client-add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-auth-sms.html" afterPath="$PROJECT_DIR$/track24/templates/client-auth-sms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-auth.html" afterPath="$PROJECT_DIR$/track24/templates/client-auth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-done-orders.html" afterPath="$PROJECT_DIR$/track24/templates/client-done-orders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-more-map.html" afterPath="$PROJECT_DIR$/track24/templates/client-more-map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-more-offers-about.html" afterPath="$PROJECT_DIR$/track24/templates/client-more-offers-about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-more-offers.html" afterPath="$PROJECT_DIR$/track24/templates/client-more-offers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-more.html" afterPath="$PROJECT_DIR$/track24/templates/client-more.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client-sign-up.html" afterPath="$PROJECT_DIR$/track24/templates/client-sign-up.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/client.html" afterPath="$PROJECT_DIR$/track24/templates/client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/driver-order-info.html" afterPath="$PROJECT_DIR$/track24/templates/driver-order-info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/index.html" afterPath="$PROJECT_DIR$/track24/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/urls.py" afterPath="$PROJECT_DIR$/track24/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/views.py" afterPath="$PROJECT_DIR$/track24/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,8 +65,8 @@
       <file leaf-file-name="carrier.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track24/templates/carrier.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+            <state relative-caret-position="540">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1095,8 +1063,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/carrier.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        <state relative-caret-position="540">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
