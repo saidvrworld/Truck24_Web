@@ -12,6 +12,8 @@ from django.core.files.storage import FileSystemStorage
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 from django.conf import settings
 import os
+from PIL import Image
+
 
 def main(request):
 
@@ -469,6 +471,7 @@ def LoadUserPhoto(request):
         myfile = request.FILES['userPhoto']
         fs = FileSystemStorage()
         filename = fs.save(userId+".jpg", myfile)
+        Compress(os.path.join(settings.MEDIA_ROOT, userId+".jpg"))
         return SendMultipartUser(request,userId)
 
     return driverSettings(request)
@@ -536,5 +539,12 @@ def getAddress(lat,long):
         finalAddress = "Не удалось определить аддресс"
 
     return finalAddress
+
+
+def Compress(filePath):
+
+    imgobj = Image.open(filePath)
+    imgobj.thumbnail((400,400), Image.ANTIALIAS)
+    imgobj.save(filePath)
 
 
