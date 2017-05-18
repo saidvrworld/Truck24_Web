@@ -580,9 +580,10 @@ def Compress(filePath):
 
 def getLanguage(request):
     try:
+        request.session["language"] = "ru/"
         lang = request.session["language"]
     except:
-        request.session["language"] = "ru//"
+        request.session["language"] = "ru/"
         lang = request.session["language"]
 
     return lang
