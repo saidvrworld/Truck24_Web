@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/track24/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="583">
-              <caret line="582" column="43" lean-forward="false" selection-start-line="582" selection-start-column="43" selection-end-line="582" selection-end-column="43" />
+              <caret line="582" column="0" lean-forward="false" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
               <folding>
                 <element signature="e#43#75#0" expanded="true" />
               </folding>
@@ -1067,7 +1067,7 @@
     <entry file="file://$PROJECT_DIR$/track24/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
-          <caret line="582" column="43" lean-forward="false" selection-start-line="582" selection-start-column="43" selection-end-line="582" selection-end-column="43" />
+          <caret line="582" column="0" lean-forward="false" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
           <folding>
             <element signature="e#43#75#0" expanded="true" />
           </folding>
