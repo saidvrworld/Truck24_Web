@@ -17,66 +17,78 @@ from PIL import Image
 
 def main(request):
 
-     return render(request, "index.html")
+    lang = getLanguage(request)
+    return render(request,lang + "/index.html")
+
 
 ########################################################################################################################
 #   CUSTOMER  CLASSES
 ########################################################################################################################
 
 def ChooseCustomer(request):
+
+    lang = getLanguage(request)
+
     try:
          if(request.session["customer_token"]):
               return CustomerOrders(request)
          else:
-             return render(request, "client-auth.html")
+
+             return render(request, lang + "client-auth.html")
     except:
-        return render(request, "client-auth.html")
+        return render(request, lang + "client-auth.html")
 
 
 def ChooseDriver(request):
+    lang = getLanguage(request)
+
     try:
          if(request.session["driver_token"]):
               return DriverOrders(request)
          else:
-             return render(request, "carrier-auth.html")
+             return render(request, lang + "carrier-auth.html")
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
 
 
 def logInCustomer(request):
+
+    lang = getLanguage(request)
     phone_number = request.POST["phone_number"]
 
     postData = {'phoneNumber': phone_number,"userType":"1"}
     url = 'http://track24.beetechno.uz/api/'
     if(len(phone_number) != 13 ):
-         return render(request, "NumberError.html")
+         return render(request, lang + "NumberError.html")
 
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     token = dataBody["token"]
     request.session["customer_token"] = token
 
-    return render(request, "client-auth-sms.html")
+    return render(request, lang + "client-auth-sms.html")
 
 def logOutCustomer(request):
 
+    lang = getLanguage(request)
     request.session["customer_token"] = None
-    return render(request, "client-auth.html")
+    return render(request, lang + "client-auth.html")
 
 
 def ClientSmsVerification(request):
+    lang = getLanguage(request)
     token = None
     try:
         sms_code = request.POST["sms_code"]
         token = request.session["customer_token"]
     except:
-        return render(request, "client-auth.html")
+        return render(request, lang + "client-auth.html")
 
 
     postData = {'smsResponse': sms_code,"token":token}
     url = 'http://track24.beetechno.uz/api/'
     if(len(sms_code) != 5 ):
-         return render(request, "SmsError.html")
+         return render(request, lang + "SmsError.html")
 
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     token = dataBody["token"]
@@ -85,26 +97,27 @@ def ClientSmsVerification(request):
     success = dataBody["success"]
 
     if(not success):
-        return render(request, "SmsError.html")
+        return render(request, lang + "SmsError.html")
 
     if(registered):
         return CustomerOrders(request)
 
     else:
-        return render(request, "client-sign-up.html")
+        return render(request, lang + "client-sign-up.html")
 
 def signInCustomer(request):
+    lang = getLanguage(request)
 
     try:
         token = request.session["customer_token"]
     except:
-        return render(request, "client-auth.html")
+        return render(request, lang + "client-auth.html")
 
 
     url = "http://track24.beetechno.uz/api/"
     name = request.POST["userName"]
     if(len(name)==0):
-        return render(request, "NameError.html")
+        return render(request, lang + "NameError.html")
 
     postData = {"token":token,"name":name}
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
@@ -113,37 +126,43 @@ def signInCustomer(request):
     if(registered):
         return CustomerOrders(request)
     else:
-        return render(request, "client-sign-up.html")
+        return render(request, lang + "client-sign-up.html")
 
 
 def CustomerOrders(request):
+
+    lang = getLanguage(request)
     url = "http://track24.beetechno.uz/api/customer/getOrders/"
     try:
         token = request.session["customer_token"]
     except:
-        return render(request, "client-auth.html")
+        return render(request, lang + "client-auth.html")
 
     postData = {"token":token}
 
     response = requests.post(url, data=postData)
     dataBody = json.loads(response.text)
-    return render(request, "client.html",dataBody)
+    return render(request, lang + "client.html",dataBody)
 
 def CustomerDoneOrders(request):
+
+    lang = getLanguage(request)
     url = "http://track24.beetechno.uz/api/customer/getFinishedOrders/"
     try:
         token = request.session["customer_token"]
     except:
-        return render(request, "client-auth.html")
+        return render(request, lang + "client-auth.html")
 
     postData = {"token":token}
 
     response = requests.post(url, data=postData)
     dataBody = json.loads(response.text)
-    return render(request, "client-done-orders.html",dataBody)
+    return render(request, lang + "client-done-orders.html",dataBody)
 
 
 def OrderDetailsForCustomer(request):
+    lang = getLanguage(request)
+
     order_id = request.POST["order_id"]
     token = "86b9eba37d8284a4"+order_id+"ad0447ce737d8885"
     postData = {'token': token}
@@ -152,9 +171,11 @@ def OrderDetailsForCustomer(request):
     from_address = getAddress(dataBody["from_lat"],dataBody["from_long"])
     to_address = getAddress(dataBody["to_lat"],dataBody["to_long"])
     print(dataBody)
-    return render(request, "client-more.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
+    return render(request, lang + "client-more.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
 
 def AcceptedOrderDetailsForCustomer(request):
+    lang = getLanguage(request)
+
     order_id = request.POST["order_id"]
     token = "86b9eba37d8284a4"+order_id+"ad0447ce737d8885"
     postData = {'token': token}
@@ -171,19 +192,20 @@ def AcceptedOrderDetailsForCustomer(request):
         driverLong = 0
 
 
-    return render(request, "client-accepted-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address,"driverLat":driverLat,"driverLong":driverLong})
+    return render(request, lang + "client-accepted-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address,"driverLat":driverLat,"driverLong":driverLong})
 
 
 def GoToAddOrder(request):
     return CarTypesCustomer(request)
 
 def AddOrder(request):
+    lang = getLanguage(request)
 
     url = "http://track24.beetechno.uz/api/customer/addOrders/"
     try:
         token = request.session["customer_token"]
     except:
-        return render(request, "client-auth.html")
+        return render(request, lang + "client-auth.html")
 
     try:
         carTypeId = request.session["carId"]
@@ -202,7 +224,7 @@ def AddOrder(request):
         year = request.POST["year"]
         date = day+"."+month+"."+year
     except:
-        return render(request, "FieldsEmptyError.html")
+        return render(request, lang + "FieldsEmptyError.html")
 
     if(len(notes) == 0):
         notes = "Нужно быстро доставить товар"
@@ -225,20 +247,24 @@ def FinishOrderCustomer(request):
 
 
 def OffersList(request):
+    lang = getLanguage(request)
+
     order_id = request.POST["order_id"]
     order_token = "86b9eba37d8284a4"+str(order_id)+"ad0447ce737d8885"
     postData = {'token': order_token}
     url = 'http://track24.beetechno.uz/api/customer/getOffers/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)
-    return  render(request, "client-more-offers.html",{"offers":dataBody})
+    return  render(request, lang + "client-more-offers.html",{"offers":dataBody})
 
 def OfferInfo(request):
+    lang = getLanguage(request)
+
     offer_id = request.POST["offer_id"]
     offer_token = "86b9eba37d8284a4"+offer_id+"ad0447ce737d8885"
     postData = {'token': offer_token}
     url = 'http://track24.beetechno.uz/api/customer/getOfferInfo/'
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
-    return render(request, "client-more-offers-about.html",{"offer":dataBody})
+    return render(request, lang + "client-more-offers-about.html",{"offer":dataBody})
 
 
 def AcceptOffer(request):
@@ -251,22 +277,26 @@ def AcceptOffer(request):
     return CustomerOrders(request)
 
 def CarTypesCustomer(request):
+    lang = getLanguage(request)
+
     get_carType_url = "http://track24.beetechno.uz/api/customer/carTypes/"
 
     try:
         token = request.session["customer_token"]
     except:
-        return render(request, "client-auth.html")
+        return render(request, lang + "client-auth.html")
 
     postData = {"token":token}
     types =  MakeRequest(urlPath=get_carType_url, post_data=postData)
-    return render(request, "chooseType.html",{"types":types})
+    return render(request, lang + "chooseType.html",{"types":types})
 
 def ChooseTypeForAddOrder(request):
+    lang = getLanguage(request)
+
     type_id = request.POST["carTypeId"]
     request.session["carId"] = type_id
 
-    return render(request, "client-add.html")
+    return render(request, lang + "client-add.html")
 
 
 ########################################################################################################################
@@ -548,3 +578,11 @@ def Compress(filePath):
     imgobj.save(filePath)
 
 
+def getLanguage(request):
+    try:
+        lang = request.session["language"]
+    except:
+        request.session["language"] = "ru"
+        lang = request.session["language"]
+
+    return lang
