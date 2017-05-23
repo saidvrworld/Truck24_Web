@@ -47,6 +47,8 @@ urlpatterns = [
 
     url(r'^driver-profile/loadUserPhoto$', views.LoadUserPhoto, name='loadUserPhoto'),
     url(r'^driver-profile/loadCarPhoto$', views.LoadCarPhoto, name='loadCarPhoto'),
+    url(r'^change-language-to-uz/$', views.LanguageToUZ, name='lang_to_uz'),
+    url(r'^change-language-to-rus/$', views.LanguageToRUS, name='lang_to_rus'),
 
 ]
 

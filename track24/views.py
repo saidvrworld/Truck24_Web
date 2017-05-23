@@ -586,3 +586,14 @@ def getLanguage(request):
         lang = request.session["language"]
 
     return lang
+
+
+def LanguageToRUS(request):
+    request.session["language"] = "ru/"
+
+    return main(request)
+
+def LanguageToUZ(request):
+    request.session["language"] = "uz/"
+
+    return main(request)
