@@ -304,38 +304,44 @@ def ChooseTypeForAddOrder(request):
 ########################################################################################################################
 
 def logInDriver(request):
+    lang = getLanguage(request)
+
     phone_number = request.POST["phone_number"]
 
     postData = {'phoneNumber': phone_number,"userType":"2"}
     url = 'http://track24.beetechno.uz/api/'
     if (len(phone_number) != 13):
-        return render(request, "NumberError.html")
+        return render(request, lang + "NumberError.html")
 
     dataBody = MakeRequest(urlPath=url, post_data=postData)[0]
     token = dataBody["token"]
     request.session["driver_token"] = token
 
-    return render(request, "carrier-auth-sms.html")
+    return render(request, lang + "carrier-auth-sms.html")
 
 def logOutDriver(request):
+    lang = getLanguage(request)
+
 
     request.session["driver_token"] = None
-    return render(request, "carrier-auth.html")
+    return render(request, lang + "carrier-auth.html")
 
 
 def DriverSmsVerification(request):
+    lang = getLanguage(request)
+
     token = None
     try:
         sms_code = request.POST["sms_code"]
         token = request.session["driver_token"]
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
 
     postData = {'smsResponse': sms_code,"token":token}
     url = 'http://track24.beetechno.uz/api/'
     if(len(sms_code) != 5 ):
-         return render(request, "SmsError.html")
+         return render(request, lang + "SmsError.html")
 
     dataBody = MakeRequest(urlPath=url,post_data=postData)[0]
     token = dataBody["token"]
@@ -344,7 +350,7 @@ def DriverSmsVerification(request):
     success = dataBody["success"]
 
     if(not success):
-        return render(request, "SmsError.html")
+        return render(request, lang + "SmsError.html")
 
     if(registered):
         return DriverOrders(request)
@@ -354,25 +360,31 @@ def DriverSmsVerification(request):
 
 
 def CarTypesDriver(request):
+    lang = getLanguage(request)
+
     get_carType_url = "http://track24.beetechno.uz/api/customer/carTypes/"
 
     try:
         token = request.session["driver_token"]
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
     postData = {"token":token}
     types =  MakeRequest(urlPath=get_carType_url, post_data=postData)
-    return render(request, "chooseTypeDriver.html",{"types":types})
+    return render(request, lang + "chooseTypeDriver.html",{"types":types})
 
 def ChooseTypeForDriver(request):
+    lang = getLanguage(request)
+
     type_id = request.POST["carTypeId"]
     request.session["carId"] = type_id
 
-    return render(request, "carrier-sign-up.html")
+    return render(request, lang + "carrier-sign-up.html")
 
 
 def signInDriver(request):
+    lang = getLanguage(request)
+
     try:
         carTypeId = request.session["carId"]
     except:
@@ -392,16 +404,18 @@ def signInDriver(request):
     if(registered):
         return DriverOrders(request)
     else:
-        return render(request, "carrier-sign-up.html")
+        return render(request, lang + "carrier-sign-up.html")
 
 def DriverOrders(request):
+    lang = getLanguage(request)
+
     get_orders_url = "http://track24.beetechno.uz/api/driver/getOrders/"
     url_for_accepted_orders = "http://track24.beetechno.uz/api/driver/myOrders/"
 
     try:
         token = request.session["driver_token"]
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
     postData = {"token":token}
     orders =  MakeRequest(urlPath=get_orders_url, post_data=postData)
@@ -410,24 +424,28 @@ def DriverOrders(request):
         order["from_address"] = from_address
     accepted_orders = MakeRequest(urlPath=url_for_accepted_orders, post_data=postData)
     print(token)
-    return render(request, "carrier.html",{"accepted_orders":accepted_orders,"orders":orders})
+    return render(request, lang + "carrier.html",{"accepted_orders":accepted_orders,"orders":orders})
 
 def DriverFinishedOrders(request):
+    lang = getLanguage(request)
+
     url_for_finished_orders = "http://track24.beetechno.uz/api/driver/myFinishedOrders/"
 
     try:
         token = request.session["driver_token"]
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
     postData = {"token":token}
     orders =  MakeRequest(urlPath=url_for_finished_orders, post_data=postData)
 
     print(token)
-    return render(request, "carrier-finished-orders.html",{"finished_orders":orders})
+    return render(request,lang +"carrier-finished-orders.html",{"finished_orders":orders})
 
 
 def OrderDetailsForDriver(request):
+    lang = getLanguage(request)
+
     order_id = request.POST["order_id"]
     driver_token = request.session["driver_token"]
 
@@ -439,10 +457,12 @@ def OrderDetailsForDriver(request):
     to_address = getAddress(dataBody["to_lat"], dataBody["to_long"])
 
     print(dataBody)
-    return render(request, "driver-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
+    return render(request, lang + "driver-order-info.html",{"order":dataBody,"from_address":from_address,"to_address":to_address})
 
 
 def FinishOrderDriver(request):
+    lang = getLanguage(request)
+
 
     order_id = request.POST["order_id"]
     driver_token = request.session["driver_token"]
@@ -456,15 +476,17 @@ def FinishOrderDriver(request):
 
 
 def OfferPrice(request):
+    lang = getLanguage(request)
+
 
     try:
         userId = request.session["driver_token"]
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
     price = request.POST["price"]
     if(len(price) == 0):
-        return render(request, "PriceError.html")
+        return render(request, lang + "PriceError.html")
 
     orderId = request.POST["orderId"]
     order_token = "86b9eba37d8284a4"+orderId+"ad0447ce737d8885"
@@ -475,27 +497,31 @@ def OfferPrice(request):
 
 
 def driverSettings(request):
+    lang = getLanguage(request)
+
     try:
         userId = request.session["driver_token"]
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
     postData = {'token': userId}
     url = 'http://track24.beetechno.uz/api/driver/getDriverInfo/'
 
     dataBody = MakeRequest(urlPath=url, post_data=postData)[0]
 
-    return render(request, "carrier-profile.html",{"driver":dataBody})
+    return render(request, lang + "carrier-profile.html",{"driver":dataBody})
 
 
 
 
 def LoadUserPhoto(request):
+    lang = getLanguage(request)
+
 
     try:
         userId = request.session["driver_token"]
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
     if request.method == 'POST' and request.FILES['userPhoto']:
         myfile = request.FILES['userPhoto']
@@ -519,11 +545,13 @@ def SendMultipartUser(request,fileName):
     return driverSettings(request)
 
 def LoadCarPhoto(request):
+    lang = getLanguage(request)
+
 
     try:
         userId = request.session["driver_token"]
     except:
-        return render(request, "carrier-auth.html")
+        return render(request, lang + "carrier-auth.html")
 
     if request.method == 'POST' and request.FILES['carPhoto']:
         myfile = request.FILES['carPhoto']

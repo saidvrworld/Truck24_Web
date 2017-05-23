@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92310-daf3-40b2-96d7-56685f51f848" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/FieldsEmptyError.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/MapTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/Mockup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/NameError.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/NumberError.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/PriceError.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/SmsError.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/carrier-auth-sms.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/carrier-auth.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/carrier-finished-orders.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/carrier-profile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/carrier-sign-up.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/carrier.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/chooseType.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/chooseTypeDriver.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-accepted-order-info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-auth-sms.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-auth.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-done-orders.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-more-map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-more-offers-about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-more-offers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-more.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-sign-up.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-story-about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client-story.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/client.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/driver-order-info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/track24/templates/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/ru/carrier.html" afterPath="$PROJECT_DIR$/track24/templates/ru/carrier.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/ru/index.html" afterPath="$PROJECT_DIR$/track24/templates/ru/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/uz/carrier.html" afterPath="$PROJECT_DIR$/track24/templates/uz/carrier.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/templates/uz/index.html" afterPath="$PROJECT_DIR$/track24/templates/uz/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track24/views.py" afterPath="$PROJECT_DIR$/track24/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track24/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8745">
-              <caret line="583" column="11" lean-forward="true" selection-start-line="583" selection-start-column="11" selection-end-line="583" selection-end-column="11" />
+            <state relative-caret-position="88">
+              <caret line="588" column="50" lean-forward="false" selection-start-line="588" selection-start-column="50" selection-end-line="588" selection-end-column="50" />
               <folding>
                 <element signature="e#43#75#0" expanded="true" />
               </folding>
@@ -89,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track24/templates/ru/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
@@ -219,13 +185,13 @@
         <option value="$PROJECT_DIR$/track24/templates/client-sign-up.html" />
         <option value="$PROJECT_DIR$/track24/static/css/style.css" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/track24/views.py" />
         <option value="$PROJECT_DIR$/track24/urls.py" />
         <option value="$PROJECT_DIR$/track24/templates/carrier.html" />
         <option value="$PROJECT_DIR$/track24/templates/uz/carrier.html" />
         <option value="$PROJECT_DIR$/track24/templates/uz/index.html" />
         <option value="$PROJECT_DIR$/track24/templates/ru/carrier.html" />
         <option value="$PROJECT_DIR$/track24/templates/ru/index.html" />
+        <option value="$PROJECT_DIR$/track24/views.py" />
       </list>
     </option>
   </component>
@@ -1065,29 +1031,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track24/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="49" column="73" lean-forward="false" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track24/templates/ru/client.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/track24/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8745">
-          <caret line="583" column="11" lean-forward="true" selection-start-line="583" selection-start-column="11" selection-end-line="583" selection-end-column="11" />
-          <folding>
-            <element signature="e#43#75#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,6 +1084,24 @@
         <state relative-caret-position="555">
           <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="49" column="73" lean-forward="false" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track24/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="588" column="50" lean-forward="false" selection-start-line="588" selection-start-column="50" selection-end-line="588" selection-end-column="50" />
+          <folding>
+            <element signature="e#43#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
